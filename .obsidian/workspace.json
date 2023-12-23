@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "S5cene/2. Area/youtube/scripts/스플릿 키보드 제작기.md",
+                "file": "S5cene/3. Resource/Algorithm/우선순위 큐.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "S5cene/2. Area/youtube/scripts/스플릿 키보드 제작기.md",
+                "file": "S5cene/3. Resource/Algorithm/우선순위 큐.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "S5cene/2. Area/youtube/scripts/스플릿 키보드 제작기.md",
+                "file": "S5cene/3. Resource/Algorithm/우선순위 큐.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "S5cene/2. Area/youtube/scripts/스플릿 키보드 제작기.md"
+                "file": "S5cene/3. Resource/Algorithm/우선순위 큐.md"
               }
             }
           }
@@ -149,8 +149,9 @@
   },
   "active": "f7560739343eb0a1",
   "lastOpenFiles": [
-    "S5cene/3. Resource/JAVA/7.8 내부 클래스.md",
     "S5cene/2. Area/youtube/scripts/스플릿 키보드 제작기.md",
+    "S5cene/3. Resource/Algorithm/우선순위 큐.md",
+    "S5cene/3. Resource/JAVA/7.8 내부 클래스.md",
     "S5cene/2. Area/youtube/scripts",
     "S5cene/2. Area/youtube",
     "S5cene/3. Resource/JAVA/7.7 인터페이스.md",
