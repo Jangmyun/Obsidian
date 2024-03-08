@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "aa407e133a829d93",
+        "id": "73c8903e6a0b2c8a",
         "type": "tabs",
         "children": [
           {
-            "id": "f7560739343eb0a1",
+            "id": "9122cab05e543c7b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "S5cene/3. Resource/Algorithm/우선순위 큐.md",
+                "file": "S5cene/3. Resource/Handong Sem3/ProgrammingStudio/Programming Studio 1-2.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "S5cene/3. Resource/Algorithm/우선순위 큐.md",
+                "file": "S5cene/3. Resource/Handong Sem3/ProgrammingStudio/Programming Studio 1-2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "S5cene/3. Resource/Algorithm/우선순위 큐.md",
+                "file": "S5cene/3. Resource/Handong Sem3/ProgrammingStudio/Programming Studio 1-2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "S5cene/3. Resource/Algorithm/우선순위 큐.md"
+                "file": "S5cene/3. Resource/Handong Sem3/ProgrammingStudio/Programming Studio 1-2.md"
               }
             }
           }
@@ -147,10 +147,31 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "f7560739343eb0a1",
+  "active": "9122cab05e543c7b",
   "lastOpenFiles": [
-    "S5cene/2. Area/youtube/scripts/스플릿 키보드 제작기.md",
+    "S5cene/3. Resource/Handong Sem3/ProgrammingStudio/Programming Studio 1-2.md",
+    "S5cene/3. Resource/Handong Sem3/Chirst/현대사회 문제와 그리스도인의 책임.md",
+    "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 1-2.md",
+    "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 2-1.md",
+    "S5cene/3. Resource/Handong Sem3/Data Structure/Data Structure 1-2.md",
+    "S5cene/3. Resource/Handong Sem3/Logic Design/Logic Design 1-2.md",
+    "S5cene/3. Resource/Handong Sem3/Logic Design/Logic Design.md",
+    "S5cene/3. Resource/Handong Sem3/Circuit/circuit 1-1.md",
+    "S5cene/3. Resource/Handong Sem3/JavaProgramming/Java 1-1.md",
+    "S5cene/3. Resource/Handong Sem3/ProgrammingStudio",
+    "S5cene/3. Resource/Handong Sem3/JavaProgramming",
+    "S5cene/3. Resource/Handong Sem3/Data Structure/Data Structure 1-1.md",
+    "S5cene/3. Resource/Handong Sem3/Circuit",
+    "S5cene/3. Resource/Handong Sem3/Chirst",
+    "S5cene/3. Resource/Handong Sem3/Untitled.md",
+    "S5cene/3. Resource/Handong Sem3/Untitled 1.md",
+    "S5cene/3. Resource/Handong Sem3/Data Structure",
     "S5cene/3. Resource/Algorithm/우선순위 큐.md",
+    "S5cene/3. Resource/Handong Sem3/Logic Design",
+    "S5cene/3. Resource/Handong Sem3/Untitled.canvas",
+    "S5cene/3. Resource/Handong Sem3",
+    "S5cene/3. Resource/Handong Sem3/C",
+    "S5cene/2. Area/youtube/scripts/스플릿 키보드 제작기.md",
     "S5cene/3. Resource/JAVA/7.8 내부 클래스.md",
     "S5cene/2. Area/youtube/scripts",
     "S5cene/2. Area/youtube",
