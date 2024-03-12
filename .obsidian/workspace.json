@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "73c8903e6a0b2c8a",
+        "id": "a7ea1d240c634791",
         "type": "tabs",
         "children": [
           {
-            "id": "9122cab05e543c7b",
+            "id": "052a5c42e61301ea",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "S5cene/3. Resource/Handong Sem3/ProgrammingStudio/Programming Studio 1-2.md",
+                "file": "S5cene/3. Resource/Handong Sem3/JavaProgramming/Java 2-1.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "S5cene/3. Resource/Handong Sem3/ProgrammingStudio/Programming Studio 1-2.md",
+                "file": "S5cene/3. Resource/Handong Sem3/JavaProgramming/Java 2-1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "S5cene/3. Resource/Handong Sem3/ProgrammingStudio/Programming Studio 1-2.md",
+                "file": "S5cene/3. Resource/Handong Sem3/JavaProgramming/Java 2-1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "S5cene/3. Resource/Handong Sem3/ProgrammingStudio/Programming Studio 1-2.md"
+                "file": "S5cene/3. Resource/Handong Sem3/JavaProgramming/Java 2-1.md"
               }
             }
           }
@@ -147,20 +147,25 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "9122cab05e543c7b",
+  "active": "052a5c42e61301ea",
   "lastOpenFiles": [
-    "S5cene/3. Resource/Handong Sem3/ProgrammingStudio/Programming Studio 1-2.md",
-    "S5cene/3. Resource/Handong Sem3/Chirst/현대사회 문제와 그리스도인의 책임.md",
     "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 1-2.md",
-    "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 2-1.md",
+    "S5cene/3. Resource/Handong Sem3/Data Structure/Data Structure 2-1.md",
     "S5cene/3. Resource/Handong Sem3/Data Structure/Data Structure 1-2.md",
+    "S5cene/3. Resource/Handong Sem3/Data Structure/Data Structure 1-1.md",
+    "S5cene/3. Resource/Handong Sem3/Chirst/과제1장.md",
+    "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 2-2.md",
+    "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 2-1.md",
+    "S5cene/3. Resource/Handong Sem3/C/Structure.md",
+    "S5cene/3. Resource/Handong Sem3/C/file.md",
+    "S5cene/3. Resource/Handong Sem3/C/pointer.md",
+    "S5cene/3. Resource/Handong Sem3/ProgrammingStudio/Programming Studio 1-2.md",
     "S5cene/3. Resource/Handong Sem3/Logic Design/Logic Design 1-2.md",
     "S5cene/3. Resource/Handong Sem3/Logic Design/Logic Design.md",
     "S5cene/3. Resource/Handong Sem3/Circuit/circuit 1-1.md",
-    "S5cene/3. Resource/Handong Sem3/JavaProgramming/Java 1-1.md",
+    "S5cene/3. Resource/Handong Sem3/JavaProgramming/Java 2-1.md",
     "S5cene/3. Resource/Handong Sem3/ProgrammingStudio",
     "S5cene/3. Resource/Handong Sem3/JavaProgramming",
-    "S5cene/3. Resource/Handong Sem3/Data Structure/Data Structure 1-1.md",
     "S5cene/3. Resource/Handong Sem3/Circuit",
     "S5cene/3. Resource/Handong Sem3/Chirst",
     "S5cene/3. Resource/Handong Sem3/Untitled.md",
