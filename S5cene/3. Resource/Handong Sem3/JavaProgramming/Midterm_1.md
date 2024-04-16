@@ -41,4 +41,10 @@
 #### Assembly Lang (middle level)
 ###### **not portable** (hardware dependent) / easily translated from human readable to machine executable code
 
-#### 
+#### Getting from Source to Machine (executable) Code
+##### Compiling - high-level => machine code
+
+##### Compiler = program that translate HLL => machine code
+
+##### Assembly = 
+
