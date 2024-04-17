@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "S5cene/3. Resource/Handong Sem3/JavaProgramming/Midterm.md",
+                "file": "S5cene/3. Resource/Handong Sem3/JavaProgramming/Java 2-2.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "7fbaa8fae6c4b967",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "S5cene/3. Resource/Handong Sem3/JavaProgramming/Midterm.md",
+                "file": "S5cene/3. Resource/Handong Sem3/JavaProgramming/Java 2-2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "S5cene/3. Resource/Handong Sem3/JavaProgramming/Midterm.md",
+                "file": "S5cene/3. Resource/Handong Sem3/JavaProgramming/Java 2-2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "S5cene/3. Resource/Handong Sem3/JavaProgramming/Midterm.md"
+                "file": "S5cene/3. Resource/Handong Sem3/JavaProgramming/Java 2-2.md"
               }
             }
           }
@@ -150,9 +151,11 @@
   },
   "active": "2a6e971f70e39ed5",
   "lastOpenFiles": [
+    "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 5-2.md",
+    "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 2-1.md",
+    "S5cene/3. Resource/Handong Sem3/JavaProgramming/Midterm_1.md",
     "Untitled 1.md",
     "Untitled 2.md",
-    "S5cene/3. Resource/Handong Sem3/JavaProgramming/Midterm.md",
     "Untitled.md",
     "S5cene/3. Resource/Handong Sem3/JavaProgramming/Untitled.md",
     "S5cene/3. Resource/Handong Sem3/JavaProgramming/Screenshot 2024-04-15 at 6.16.09 PM.png",
@@ -160,7 +163,6 @@
     "S5cene/AttachedFile/Screenshot 2024-04-15 at 6.16.53 PM.png",
     "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 7-1.md",
     "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 6-1.md",
-    "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 5-2.md",
     "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 5-1.md",
     "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 4-2.md",
     "S5cene/3. Resource/Handong Sem3/Data Structure/11Queue.md",
@@ -171,7 +173,6 @@
     "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 4-1.md",
     "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 3-2.md",
     "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 3-1.md",
-    "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 2-1.md",
     "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 2-2.md",
     "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 1-2.md",
     "S5cene/3. Resource/JAVA/Semester 3/useDelimiter() - Scanner 구분자 변경.md",
