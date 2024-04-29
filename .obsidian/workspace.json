@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "a82cb754beb75a94",
+        "id": "0afc6a762838c2c6",
         "type": "tabs",
         "children": [
           {
-            "id": "2a6e971f70e39ed5",
+            "id": "a94ec8c908876f00",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "S5cene/3. Resource/Handong Sem3/JavaProgramming/Java 2-2.md",
+                "file": "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 9-1.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "7fbaa8fae6c4b967",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "S5cene/3. Resource/Handong Sem3/JavaProgramming/Java 2-2.md",
+                "file": "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 9-1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "S5cene/3. Resource/Handong Sem3/JavaProgramming/Java 2-2.md",
+                "file": "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 9-1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "S5cene/3. Resource/Handong Sem3/JavaProgramming/Java 2-2.md"
+                "file": "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 9-1.md"
               }
             }
           }
@@ -149,9 +148,18 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "2a6e971f70e39ed5",
+  "active": "a94ec8c908876f00",
   "lastOpenFiles": [
+    "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 9-1.md",
+    "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 7-1.md",
+    "Untitled.canvas",
+    "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 6-1.md",
+    "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 4-2.md",
+    "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 5-1.md",
     "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 5-2.md",
+    "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 7-2.md",
+    "S5cene/3. Resource/Handong Sem3/Chirst/중간 정리.md",
+    "S5cene/3. Resource/Handong Sem3/JavaProgramming/Java 2-2.md",
     "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 2-1.md",
     "S5cene/3. Resource/Handong Sem3/JavaProgramming/Midterm_1.md",
     "Untitled 1.md",
@@ -161,10 +169,6 @@
     "S5cene/3. Resource/Handong Sem3/JavaProgramming/Screenshot 2024-04-15 at 6.16.09 PM.png",
     "Screenshot 2024-04-15 at 2.31.52 PM.png",
     "S5cene/AttachedFile/Screenshot 2024-04-15 at 6.16.53 PM.png",
-    "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 7-1.md",
-    "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 6-1.md",
-    "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 5-1.md",
-    "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 4-2.md",
     "S5cene/3. Resource/Handong Sem3/Data Structure/11Queue.md",
     "S5cene/3. Resource/Handong Sem3/Data Structure/10Recursion.md",
     "S5cene/3. Resource/Handong Sem3/Data Structure/04StackADT.md",
@@ -176,11 +180,7 @@
     "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 2-2.md",
     "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 1-2.md",
     "S5cene/3. Resource/JAVA/Semester 3/useDelimiter() - Scanner 구분자 변경.md",
-    "S5cene/3. Resource/JAVA/Semester 3/Untitled 1.md",
     "S5cene/3. Resource/JAVA/Semester 3",
-    "S5cene/3. Resource/Handong Sem3/Data Structure/13LinkedList.md",
-    "S5cene/3. Resource/Handong Sem3/Data Structure/Data Structure 2-2.md",
-    "S5cene/3. Resource/Handong Sem3/Data Structure/Data Structure 2-1.md",
     "S5cene/3. Resource/Handong Sem3/ProgrammingStudio",
     "S5cene/3. Resource/Handong Sem3/JavaProgramming",
     "S5cene/3. Resource/Handong Sem3/Circuit",
