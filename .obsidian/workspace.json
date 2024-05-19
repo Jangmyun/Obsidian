@@ -4,6 +4,7 @@
     "type": "split",
     "children": [
       {
+<<<<<<< Updated upstream
         "id": "e0a9c4986d6d1ed0",
         "type": "tabs",
         "children": [
@@ -17,6 +18,17 @@
                 "mode": "source",
                 "source": false
               }
+=======
+        "id": "1e2dc58afe4c09d1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "56bf39b017f01baa",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+>>>>>>> Stashed changes
             }
           }
         ]
@@ -85,7 +97,10 @@
             "state": {
               "type": "backlink",
               "state": {
+<<<<<<< Updated upstream
                 "file": "S5cene/3. Resource/Handong Sem3/JavaProgramming/Midterm_2/7. Arrays.md",
+=======
+>>>>>>> Stashed changes
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +117,10 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+<<<<<<< Updated upstream
                 "file": "S5cene/3. Resource/Handong Sem3/JavaProgramming/Midterm_2/7. Arrays.md",
+=======
+>>>>>>> Stashed changes
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +142,13 @@
             "type": "leaf",
             "state": {
               "type": "outline",
+<<<<<<< Updated upstream
               "state": {
                 "file": "S5cene/3. Resource/Handong Sem3/JavaProgramming/Midterm_2/7. Arrays.md"
               }
+=======
+              "state": {}
+>>>>>>> Stashed changes
             }
           }
         ],
@@ -148,20 +170,32 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
+<<<<<<< Updated upstream
   "active": "ec74ce8f2acab390",
   "lastOpenFiles": [
     "S5cene/3. Resource/Handong Sem3/JavaProgramming/Midterm_2/6. More About Objects and Methods.md",
     "S5cene/3. Resource/Handong Sem3/JavaProgramming/Midterm_2/7. Arrays.md",
     "S5cene/3. Resource/Handong Sem3/JavaProgramming/Midterm_1.md",
     "S5cene/3. Resource/Handong Sem3/JavaProgramming/Midterm_2",
+=======
+  "active": "56bf39b017f01baa",
+  "lastOpenFiles": [
+    "S5cene/3. Resource/Handong Sem3/Chirst/Untitled.md",
+    "S5cene/3. Resource/Handong Sem3/Chirst/과제1장.md",
+    "S5cene/3. Resource/JAVA/6.4 생성자.md",
+    "S5cene/3. Resource/React/React Query/React-Query.md",
+    "S5cene/3. Resource/React/React Query.md",
+>>>>>>> Stashed changes
     "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 9-1.md",
-    "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 7-1.md",
+    "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 7-2.md",
+    "S5cene/3. Resource/Handong Sem3/Data Structure/13LinkedList.md",
+    "S5cene/AttachedFile/Screenshot 2024-04-15 at 6.16.53 PM.png",
     "Untitled.canvas",
+    "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 7-1.md",
     "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 6-1.md",
     "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 4-2.md",
     "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 5-1.md",
     "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 5-2.md",
-    "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 7-2.md",
     "S5cene/3. Resource/Handong Sem3/Chirst/중간 정리.md",
     "S5cene/3. Resource/Handong Sem3/JavaProgramming/Java 2-2.md",
     "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 2-1.md",
@@ -171,16 +205,18 @@
     "S5cene/3. Resource/Handong Sem3/JavaProgramming/Untitled.md",
     "S5cene/3. Resource/Handong Sem3/JavaProgramming/Screenshot 2024-04-15 at 6.16.09 PM.png",
     "Screenshot 2024-04-15 at 2.31.52 PM.png",
-    "S5cene/AttachedFile/Screenshot 2024-04-15 at 6.16.53 PM.png",
     "S5cene/3. Resource/Handong Sem3/Data Structure/11Queue.md",
     "S5cene/3. Resource/Handong Sem3/Data Structure/10Recursion.md",
     "S5cene/3. Resource/Handong Sem3/Data Structure/04StackADT.md",
     "S5cene/3. Resource/Handong Sem3/Data Structure/03AlgorithmEfficiency.md",
     "S5cene/3. Resource/Handong Sem3/Data Structure/02BasicConcepts.md",
+<<<<<<< Updated upstream
     "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 4-1.md",
     "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 3-2.md",
     "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 3-1.md",
     "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 2-2.md",
+=======
+>>>>>>> Stashed changes
     "S5cene/3. Resource/JAVA/Semester 3",
     "S5cene/3. Resource/Handong Sem3/ProgrammingStudio",
     "S5cene/3. Resource/Handong Sem3/JavaProgramming",
