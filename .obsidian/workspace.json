@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "0afc6a762838c2c6",
+        "id": "e0a9c4986d6d1ed0",
         "type": "tabs",
         "children": [
           {
-            "id": "a94ec8c908876f00",
+            "id": "ec74ce8f2acab390",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 9-1.md",
+                "file": "S5cene/3. Resource/Handong Sem3/JavaProgramming/Midterm_2/7. Arrays.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 9-1.md",
+                "file": "S5cene/3. Resource/Handong Sem3/JavaProgramming/Midterm_2/7. Arrays.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 9-1.md",
+                "file": "S5cene/3. Resource/Handong Sem3/JavaProgramming/Midterm_2/7. Arrays.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 9-1.md"
+                "file": "S5cene/3. Resource/Handong Sem3/JavaProgramming/Midterm_2/7. Arrays.md"
               }
             }
           }
@@ -148,8 +148,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "a94ec8c908876f00",
+  "active": "ec74ce8f2acab390",
   "lastOpenFiles": [
+    "S5cene/3. Resource/Handong Sem3/JavaProgramming/Midterm_2/6. More About Objects and Methods.md",
+    "S5cene/3. Resource/Handong Sem3/JavaProgramming/Midterm_2/7. Arrays.md",
+    "S5cene/3. Resource/Handong Sem3/JavaProgramming/Midterm_1.md",
+    "S5cene/3. Resource/Handong Sem3/JavaProgramming/Midterm_2",
     "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 9-1.md",
     "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 7-1.md",
     "Untitled.canvas",
@@ -161,7 +165,6 @@
     "S5cene/3. Resource/Handong Sem3/Chirst/중간 정리.md",
     "S5cene/3. Resource/Handong Sem3/JavaProgramming/Java 2-2.md",
     "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 2-1.md",
-    "S5cene/3. Resource/Handong Sem3/JavaProgramming/Midterm_1.md",
     "Untitled 1.md",
     "Untitled 2.md",
     "Untitled.md",
@@ -178,8 +181,6 @@
     "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 3-2.md",
     "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 3-1.md",
     "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 2-2.md",
-    "S5cene/3. Resource/Handong Sem3/Chirst/기독교 윤리학 1-2.md",
-    "S5cene/3. Resource/JAVA/Semester 3/useDelimiter() - Scanner 구분자 변경.md",
     "S5cene/3. Resource/JAVA/Semester 3",
     "S5cene/3. Resource/Handong Sem3/ProgrammingStudio",
     "S5cene/3. Resource/Handong Sem3/JavaProgramming",
@@ -189,7 +190,6 @@
     "S5cene/3. Resource/Handong Sem3/Logic Design",
     "S5cene/3. Resource/Handong Sem3/Untitled.canvas",
     "S5cene/3. Resource/Handong Sem3",
-    "S5cene/3. Resource/Handong Sem3/C",
-    "S5cene/2. Area/youtube/scripts"
+    "S5cene/3. Resource/Handong Sem3/C"
   ]
 }
