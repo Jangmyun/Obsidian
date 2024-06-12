@@ -1,5 +1,5 @@
 {
   "tabSize": 4,
-  "attachmentFolderPath": "S5cene/AttachedFile",
+  "attachmentFolderPath": "./attachments",
   "promptDelete": false
 }
