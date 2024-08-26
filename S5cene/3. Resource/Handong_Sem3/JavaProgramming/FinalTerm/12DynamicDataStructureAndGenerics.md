@@ -299,3 +299,14 @@ public class StringLinkedListWithIterator{
 
 
 ### 12-3 복습- e
+
+# Generic
++ type parameter 와 함께 클래스 정의
++ class 사용시 type이 정의되어야 한다.
++ primitive type은 올 수 없다. **class type 이용**
+
+Constructor에는 타입 파라미터 없음 
+`public LinkedList()`
+
+Limited use of the type Parameter
+제네릭 클래스나 메서드 내에서 타입 파라미터로 새로운 객체를 직접 생성할 수 없다.
