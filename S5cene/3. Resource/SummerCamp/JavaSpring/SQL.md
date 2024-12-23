@@ -1,2 +1,0 @@
-foreign key
-fk_tableName_ColumnName

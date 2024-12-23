@@ -1,8 +1,0 @@
-{
-	"nodes":[
-		{"id":"288dde5d106542b1","x":-149,"y":234,"width":250,"height":60,"type":"text","text":"# Reservation"},
-		{"id":"820e5a2a4653f15c","x":60,"y":80,"width":250,"height":60,"type":"text","text":"# Show\n"},
-		{"id":"c23bc94fd90cefbc","x":-260,"y":-140,"width":250,"height":70,"type":"text","text":"# User\n###### "}
-	],
-	"edges":[]
-}

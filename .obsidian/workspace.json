@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "4d25cd1146e7080d",
+        "id": "59a2053b703afc8d",
         "type": "tabs",
         "children": [
           {
-            "id": "3caf143c43f4de00",
+            "id": "0e7a5f48ece20c6c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "S5cene/1. Project/PupilDilation/Study/SpringBoot/security/1.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "S5cene/1. Project/PupilDilation/Study/SpringBoot/security/1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "S5cene/1. Project/PupilDilation/Study/SpringBoot/security/1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "S5cene/1. Project/PupilDilation/Study/SpringBoot/security/1.md"
-              }
+              "state": {}
             }
           },
           {
@@ -156,10 +148,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cb2786aee0f96fd8",
+  "active": "0e7a5f48ece20c6c",
   "lastOpenFiles": [
-    "S5cene/3. Resource/Handong_Sem4",
+    "S5cene/3. Resource/Handong_Sem4/미술의이해/4.기로에_선_미술.md",
+    "S5cene/3. Resource/Handong_Sem4/미술의이해/3.위대한각성_그리스.md",
+    "S5cene/3. Resource/Handong_Sem4/InteractiveVisualMedia/DelegateType.md",
+    "S5cene/3. Resource/Handong_Sem4/미술의이해/2.영원을_위한_미술_이집트.md",
+    "S5cene/3. Resource/Handong_Sem4/InteractiveVisualMedia",
+    "S5cene/3. Resource/Handong_Sem4/미술의이해/1.md",
+    "S5cene/3. Resource/Handong_Sem4/공설입/1.md",
+    "S5cene/3. Resource/Handong_Sem4/공설입",
     "S5cene/1. Project/PupilDilation/Study/SpringBoot/security/1.md",
+    "S5cene/3. Resource/Handong_Sem4/미술의이해",
+    "S5cene/3. Resource/Handong_Sem4",
     "S5cene/1. Project/PupilDilation/Study/SpringBoot/security",
     "S5cene/1. Project/PupilDilation/Study/SpringBoot/Paging 처리.md",
     "S5cene/1. Project/PupilDilation/Study/SpringBoot/2_StartJavaSpringFramework.md",
@@ -184,27 +185,18 @@
     "S5cene/3. Resource/JAVA/6 객체지향 프로그래밍.md",
     "S5cene/3. Resource/SummerCamp/Project/Untitled",
     "S5cene/3. Resource/SummerCamp/ProjectPlanning",
-    "S5cene/3. Resource/SummerCamp/JavaSpring",
     "S5cene/3. Resource/SummerCamp/JavaSpring/SQL.md",
-    "S5cene/3. Resource/SummerCamp",
     "S5cene/3. Resource/React/Lazy import.md",
     "S5cene/3. Resource/Handong_Sem3/ProgrammingStudio/FileIO.md",
-    "S5cene/3. Resource/Handong_Sem3/JavaProgramming/FinalTerm/13BasicSwingDetails.md",
-    "S5cene/3. Resource/Handong_Sem3/ProgrammingStudio/Untitled",
     "S5cene/3. Resource/Handong_Sem3/JavaProgramming/FinalTerm/attachments/Screenshot 2024-06-15 at 22.31.58.png",
     "S5cene/3. Resource/Handong_Sem3/JavaProgramming/FinalTerm/attachments/Screenshot 2024-06-15 at 22.30.18.png",
     "S5cene/3. Resource/Handong_Sem3/JavaProgramming/FinalTerm/attachments/Screenshot 2024-06-15 at 21.31.27.png",
     "S5cene/3. Resource/Handong_Sem3/JavaProgramming/FinalTerm/attachments/Screenshot 2024-06-15 at 21.31.18.png",
-    "S5cene/3. Resource/Handong_Sem3/JavaProgramming/FinalTerm/12DynamicDataStructureAndGenerics.md",
-    "S5cene/3. Resource/Handong_Sem3/JavaProgramming/FinalTerm/11Recursive.md",
     "S5cene/3. Resource/Handong_Sem3/JavaProgramming/FinalTerm/attachments/Screenshot 2024-06-15 at 21.20.41.png",
     "S5cene/3. Resource/Handong_Sem3/JavaProgramming/FinalTerm/attachments/Screenshot 2024-06-15 at 21.26.44.png",
     "S5cene/3. Resource/Handong_Sem3/JavaProgramming/FinalTerm/attachments/Screenshot 2024-06-15 at 21.20.20.png",
     "S5cene/3. Resource/Handong_Sem3/JavaProgramming/FinalTerm/attachments/code.png",
-    "S5cene/3. Resource/JAVA/Semester 3/BufferedReader,FileReader.md",
     "Untitled.canvas",
-    "2024-06-12.md",
-    "S5cene/3. Resource/Handong_Sem3/JavaProgramming/FinalTerm/attachments/Screenshot 2024-06-12 at 19.19.25.png",
-    "S5cene/3. Resource/Handong_Sem3/JavaProgramming/FinalTerm/attachments"
+    "S5cene/3. Resource/Handong_Sem3/JavaProgramming/FinalTerm/attachments/Screenshot 2024-06-12 at 19.19.25.png"
   ]
 }
