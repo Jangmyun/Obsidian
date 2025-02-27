@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "59a2053b703afc8d",
+        "id": "dc263aa8b7df44a2",
         "type": "tabs",
         "children": [
           {
-            "id": "0e7a5f48ece20c6c",
+            "id": "26d61f5ad1023bc4",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Study/Javascript/비교 연산자.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "비교 연산자"
+              "title": "New tab"
             }
           }
         ]
@@ -180,10 +176,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "0e7a5f48ece20c6c",
+  "active": "26d61f5ad1023bc4",
   "lastOpenFiles": [
-    "Study/Javascript",
+    "README.md",
     "Study/Javascript/비교 연산자.md",
+    "Study/Javascript",
     "PARA/4_Archives",
     "PARA/3_Resources",
     "PARA/2_Area",
@@ -203,7 +200,6 @@
     "S5cene/3. Resource/Handong_Sem4/공설입",
     "S5cene/1. Project/PupilDilation/Study/SpringBoot/security/1.md",
     "S5cene/3. Resource/Handong_Sem4/미술의이해",
-    "S5cene/3. Resource/Handong_Sem4",
     "S5cene/1. Project/PupilDilation/Study/SpringBoot/Paging 처리.md",
     "S5cene/1. Project/PupilDilation/Study/SpringBoot/2_StartJavaSpringFramework.md",
     "S5cene/1. Project/PupilDilation/Study/SpringBoot/summer.md",
