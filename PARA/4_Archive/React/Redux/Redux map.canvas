@@ -1,0 +1,24 @@
+{
+	"nodes":[
+		{"id":"e02524eeddec5784","type":"text","text":"store","x":-400,"y":-740,"width":132,"height":56},
+		{"id":"05c43b0dfde2d2d6","type":"text","text":"# reducer\n```js\nfunction reducer(oldState, action){\n\tif(action.type === 'create'){\n\t\tvar newContents = oldState.contents.concat();\n\t\tvar\n\t}\n}\nvar store = Redux.createStore(reducer);\n```","x":-600,"y":-250,"width":560,"height":230},
+		{"id":"b0fb077af6002026","type":"text","text":"# subscribe\n### 값이 변경됐을 때 실행될 함수 등록","x":40,"y":-165,"width":260,"height":145},
+		{"id":"6437011f959b1ade","type":"text","text":"# state\n### 직접 접근이 불가능한 정보들","x":-1040,"y":-195,"width":360,"height":120},
+		{"id":"2547c6b7c2e10413","type":"text","text":"# getState\n### 값을 가져온다.","x":40,"y":73,"width":300,"height":167},
+		{"id":"5ccddeeaa5098f82","type":"text","text":"action","x":780,"y":-310,"width":140,"height":60},
+		{"id":"3ffa078439af9ee4","type":"text","text":"# dispatch\n### reducer 호출해서 state 값 바꿈<br>subscribe 이용해서 render함수 호출\n```js\n<form onsubmit=\"\n\tstore.dispatch({type:'create', payload: {title:title, desc:desc}});\n\">\n\n```","x":200,"y":-720,"width":620,"height":330},
+		{"id":"7bcd501c5ca2162f","type":"text","text":"# render\n```js\nfunction render(){\n\tvar state = store.getState();\n//...\n\tdocument.querySelector('#app').innerHTML = `\n\t<h1>WEB</h1> \n\t...\n\t`\n}\n```\n\n### state 값이 바뀔때마다 render 함수가 실행 = **subscribe**\n```js\nstore.subscribe(render)\n// state 값이 바뀔때마다 render함수 호출 => UI 갱신\n```","x":470,"y":-165,"width":620,"height":475}
+	],
+	"edges":[
+		{"id":"70cf22b301fc2640","fromNode":"05c43b0dfde2d2d6","fromSide":"left","toNode":"6437011f959b1ade","toSide":"right"},
+		{"id":"39c2ffd748feb52d","fromNode":"6437011f959b1ade","fromSide":"bottom","toNode":"2547c6b7c2e10413","toSide":"left"},
+		{"id":"6e92a09419e76c96","fromNode":"2547c6b7c2e10413","fromSide":"left","toNode":"6437011f959b1ade","toSide":"bottom"},
+		{"id":"ed09ada465868c19","fromNode":"3ffa078439af9ee4","fromSide":"bottom","toNode":"b0fb077af6002026","toSide":"top"},
+		{"id":"546809d5314fff88","fromNode":"3ffa078439af9ee4","fromSide":"left","toNode":"05c43b0dfde2d2d6","toSide":"right","label":"현재 state값, action 객체"},
+		{"id":"d487993421fad394","fromNode":"b0fb077af6002026","fromSide":"right","toNode":"7bcd501c5ca2162f","toSide":"left"},
+		{"id":"c78699a307cf11f6","fromNode":"5ccddeeaa5098f82","fromSide":"left","toNode":"3ffa078439af9ee4","toSide":"right"},
+		{"id":"b7fa729643a2476e","fromNode":"2547c6b7c2e10413","fromSide":"right","toNode":"7bcd501c5ca2162f","toSide":"left"},
+		{"id":"048991fe0a937f50","fromNode":"7bcd501c5ca2162f","fromSide":"left","toNode":"2547c6b7c2e10413","toSide":"right"},
+		{"id":"14eccb63ae9cc6b7","fromNode":"7bcd501c5ca2162f","fromSide":"left","toNode":"b0fb077af6002026","toSide":"right"}
+	]
+}
