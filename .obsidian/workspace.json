@@ -11,10 +11,14 @@
             "id": "26d61f5ad1023bc4",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "PARA/4_Archive/React/React기초.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "React기초"
             }
           }
         ]
@@ -138,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Study/Javascript/Untitled.md",
+                "file": "PARA/4_Archive/React/React기초.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Untitled"
+              "title": "Outline of React기초"
             }
           },
           {
@@ -153,12 +157,12 @@
             "state": {
               "type": "advanced-tables-toolbar",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -176,55 +180,56 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "26d61f5ad1023bc4",
+  "active": "cb2786aee0f96fd8",
   "lastOpenFiles": [
-    "README.md",
-    "Study/Javascript/비교 연산자.md",
-    "Study/Javascript",
-    "PARA/4_Archives",
-    "PARA/3_Resources",
-    "PARA/2_Area",
-    "PARA/1_Project",
-    "PARA",
-    "Study",
-    "2024-06-12.md",
+    "PARA/4_Archive/Javascript/카카오맵 API.md",
+    "PARA/4_Archive/Javascript/localStorage 사용법.md",
+    "PARA/4_Archive/Javascript/findIndex로 객체 배열 인덱스 찾기.md",
+    "PARA/4_Archive/Javascript/canvas.md",
+    "PARA/4_Archive/Javascript",
+    "PARA/4_Archive/React/React 에서 script태그로 자바스크립트 불러오기.md",
+    "PARA/4_Archive/React/React Router.md",
+    "PARA/4_Archive/React/React Query.md",
+    "PARA/4_Archive/React/Lazy import.md",
+    "PARA/4_Archive/React/3. props.md",
+    "PARA/4_Archive/React/1. 실습환경 구축.md",
+    "PARA/4_Archive/React/React기초.md",
+    "PARA/4_Archive/React/Redux/Redux Toolkit.md",
+    "PARA/4_Archive/React/Redux/Redux map.canvas",
+    "PARA/4_Archive/React/Redux/1. Redux 개요.md",
+    "PARA/4_Archive/React/Redux",
+    "PARA/4_Archive/React/서버와 통신하기 ajax.md",
+    "PARA/4_Archive/React/useTransition.md",
+    "PARA/4_Archive/React/Context API.md",
+    "PARA/4_Archive/React/React에서 자주 사용하는 조건문 작성패턴.md",
+    "PARA/4_Archive/React/2. Component 만들기.md",
+    "PARA/4_Archive/React/React기초_2.md",
+    "PARA/1_Project/Gameboy/1_GameBoy개발환경_세팅과_Hello_World_출력.md",
+    "PARA/1_Project/CodingRoadmapAssistant/02_Command.md",
+    "PARA/1_Project/CodingRoadmapAssistant/01_First_Extension.md",
+    "PARA/1_Project/CodingRoadmapAssistant",
+    "PARA/1_Project/Untitled.md",
+    "PARA/1_Project/Gameboy/attachments/Screenshot 2025-01-28 at 12.53.23.png",
+    "PARA/1_Project/Gameboy/attachments",
+    "PARA/1_Project/Gameboy/Register.md",
+    "PARA/1_Project/Gameboy/Memory.md",
+    "PARA/1_Project/Gameboy/Header.md",
+    "PARA/1_Project/Gameboy",
+    "PARA/4_Archive/React/attachments/appjs.png",
+    "PARA/4_Archive/React/attachments",
+    "PARA/4_Archive/React",
+    "Study/Java_Spring_Boot_3/blog",
+    "Study/Java_Spring_Boot_3",
+    "PARA/4_Archive",
     "Untitled.canvas",
-    "Untitled.md",
-    "S5cene/3. Resource/Handong_Sem4/미술의이해/4.기로에_선_미술.md",
-    "S5cene/3. Resource/Handong_Sem4/미술의이해/3.위대한각성_그리스.md",
-    "S5cene/3. Resource/Handong_Sem4/InteractiveVisualMedia/DelegateType.md",
-    "S5cene/3. Resource/Handong_Sem4/미술의이해/2.영원을_위한_미술_이집트.md",
-    "S5cene/3. Resource/Handong_Sem4/InteractiveVisualMedia",
-    "S5cene/3. Resource/Handong_Sem4/미술의이해/1.md",
-    "S5cene/3. Resource/Handong_Sem4/공설입/1.md",
-    "S5cene/3. Resource/Handong_Sem4/공설입",
-    "S5cene/1. Project/PupilDilation/Study/SpringBoot/security/1.md",
-    "S5cene/3. Resource/Handong_Sem4/미술의이해",
-    "S5cene/1. Project/PupilDilation/Study/SpringBoot/Paging 처리.md",
-    "S5cene/1. Project/PupilDilation/Study/SpringBoot/2_StartJavaSpringFramework.md",
-    "S5cene/1. Project/PupilDilation/Study/SpringBoot/summer.md",
-    "S5cene/1. Project/PupilDilation/Study/MySQL.md",
-    "S5cene/1. Project/PupilDilation/Study/nodejs/react-nodejs-mysql-01.md",
-    "S5cene/3. Resource/SummerCamp/Udemy/02SpringContainer.md",
-    "S5cene/3. Resource/SummerCamp/Udemy/01SpringBean.md",
     "S5cene/3. Resource/SummerCamp/DB.canvas",
-    "S5cene/3. Resource/SummerCamp/Udemy/S.md",
-    "S5cene/3. Resource/SummerCamp/JavaSpring/1JavaSrping.md",
-    "S5cene/3. Resource/React/Redux/Redux- props 없이 state 공유.md",
-    "S5cene/3. Resource/React/Redux/Redux 공식문서 1.md",
-    "S5cene/3. Resource/React/Redux/Redux Toolkit.md",
     "S5cene/3. Resource/SummerCamp/JavaSpring/attachments/Screenshot 2024-07-09 at 10.31.22.png",
-    "S5cene/3. Resource/SummerCamp/ProjectPlanning/프로젝트기획기초.md",
-    "S5cene/3. Resource/React/Context API.md",
-    "S5cene/3. Resource/JAVA/6 객체지향 프로그래밍.md",
     "S5cene/3. Resource/Handong_Sem3/JavaProgramming/FinalTerm/attachments/Screenshot 2024-06-15 at 22.31.58.png",
     "S5cene/3. Resource/Handong_Sem3/JavaProgramming/FinalTerm/attachments/Screenshot 2024-06-15 at 22.30.18.png",
     "S5cene/3. Resource/Handong_Sem3/JavaProgramming/FinalTerm/attachments/Screenshot 2024-06-15 at 21.31.27.png",
     "S5cene/3. Resource/Handong_Sem3/JavaProgramming/FinalTerm/attachments/Screenshot 2024-06-15 at 21.31.18.png",
     "S5cene/3. Resource/Handong_Sem3/JavaProgramming/FinalTerm/attachments/Screenshot 2024-06-15 at 21.20.41.png",
     "S5cene/3. Resource/Handong_Sem3/JavaProgramming/FinalTerm/attachments/Screenshot 2024-06-15 at 21.26.44.png",
-    "S5cene/3. Resource/Handong_Sem3/JavaProgramming/FinalTerm/attachments/Screenshot 2024-06-15 at 21.20.20.png",
-    "S5cene/3. Resource/Handong_Sem3/JavaProgramming/FinalTerm/attachments/code.png",
-    "S5cene/3. Resource/Handong_Sem3/JavaProgramming/FinalTerm/attachments/Screenshot 2024-06-12 at 19.19.25.png"
+    "S5cene/3. Resource/Handong_Sem3/JavaProgramming/FinalTerm/attachments/Screenshot 2024-06-15 at 21.20.20.png"
   ]
 }
