@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "dc263aa8b7df44a2",
+        "id": "c0fa74afefabefcb",
         "type": "tabs",
         "children": [
           {
-            "id": "26d61f5ad1023bc4",
+            "id": "5bb835e2cb3c5a17",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PARA/4_Archive/React/React기초.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "React기초"
+              "title": "README"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PARA/4_Archive/React/React기초.md",
+                "file": "README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of React기초"
+              "title": "Outline of README"
             }
           },
           {
@@ -182,45 +182,45 @@
   },
   "active": "cb2786aee0f96fd8",
   "lastOpenFiles": [
-    "PARA/4_Archive/Javascript/카카오맵 API.md",
-    "PARA/4_Archive/Javascript/localStorage 사용법.md",
-    "PARA/4_Archive/Javascript/findIndex로 객체 배열 인덱스 찾기.md",
-    "PARA/4_Archive/Javascript/canvas.md",
-    "PARA/4_Archive/Javascript",
+    "Study/Java_Spring_Boot_3/blog/2_엔티티_구성.md",
+    "Study/Java_Spring_Boot_3/blog/1_사전지식.md",
+    "Study/Java_Spring_Boot_3/blog",
+    "Study/Java_Spring_Boot_3/Test.md",
+    "Study/Java_Spring_Boot_3/ORM.md",
+    "Study/Java_Spring_Boot_3/5_스프링부트_프로젝트_발전시키기.md",
+    "Study/Java_Spring_Boot_3/3_스프링부트_코드_이해하기.md",
+    "Study/Java_Spring_Boot_3/4_스프링부트_구조_살펴보기.md",
+    "Study/Java_Spring_Boot_3/2_스프링부트_둘러보기.md",
+    "Study/Java_Spring_Boot_3/1_스프링_콘셉트.md",
+    "Study/Java_Spring_Boot_3",
+    "PARA/4_Archive/React/attachments/appjs.png",
+    "PARA/4_Archive/React/Redux/Redux map.canvas",
+    "PARA/4_Archive/React/Redux/Redux Toolkit.md",
+    "PARA/4_Archive/React/Redux/1. Redux 개요.md",
+    "PARA/4_Archive/React/서버와 통신하기 ajax.md",
+    "PARA/4_Archive/React/useTransition.md",
+    "PARA/4_Archive/React/attachments",
+    "PARA/4_Archive/React/Redux",
+    "PARA/4_Archive/React/React에서 자주 사용하는 조건문 작성패턴.md",
+    "PARA/4_Archive/React/React기초_2.md",
+    "PARA/4_Archive/React/React기초.md",
     "PARA/4_Archive/React/React 에서 script태그로 자바스크립트 불러오기.md",
     "PARA/4_Archive/React/React Router.md",
     "PARA/4_Archive/React/React Query.md",
     "PARA/4_Archive/React/Lazy import.md",
-    "PARA/4_Archive/React/3. props.md",
-    "PARA/4_Archive/React/1. 실습환경 구축.md",
-    "PARA/4_Archive/React/React기초.md",
-    "PARA/4_Archive/React/Redux/Redux Toolkit.md",
-    "PARA/4_Archive/React/Redux/Redux map.canvas",
-    "PARA/4_Archive/React/Redux/1. Redux 개요.md",
-    "PARA/4_Archive/React/Redux",
-    "PARA/4_Archive/React/서버와 통신하기 ajax.md",
-    "PARA/4_Archive/React/useTransition.md",
     "PARA/4_Archive/React/Context API.md",
-    "PARA/4_Archive/React/React에서 자주 사용하는 조건문 작성패턴.md",
+    "PARA/4_Archive/React/3. props.md",
     "PARA/4_Archive/React/2. Component 만들기.md",
-    "PARA/4_Archive/React/React기초_2.md",
-    "PARA/1_Project/Gameboy/1_GameBoy개발환경_세팅과_Hello_World_출력.md",
-    "PARA/1_Project/CodingRoadmapAssistant/02_Command.md",
-    "PARA/1_Project/CodingRoadmapAssistant/01_First_Extension.md",
-    "PARA/1_Project/CodingRoadmapAssistant",
-    "PARA/1_Project/Untitled.md",
+    "PARA/4_Archive/React/1. 실습환경 구축.md",
+    "PARA/4_Archive/Javascript/카카오맵 API.md",
+    "PARA/4_Archive/Javascript/localStorage 사용법.md",
+    "PARA/4_Archive/React",
+    "PARA/4_Archive/Javascript",
+    "PARA/4_Archive",
     "PARA/1_Project/Gameboy/attachments/Screenshot 2025-01-28 at 12.53.23.png",
     "PARA/1_Project/Gameboy/attachments",
-    "PARA/1_Project/Gameboy/Register.md",
-    "PARA/1_Project/Gameboy/Memory.md",
-    "PARA/1_Project/Gameboy/Header.md",
     "PARA/1_Project/Gameboy",
-    "PARA/4_Archive/React/attachments/appjs.png",
-    "PARA/4_Archive/React/attachments",
-    "PARA/4_Archive/React",
-    "Study/Java_Spring_Boot_3/blog",
-    "Study/Java_Spring_Boot_3",
-    "PARA/4_Archive",
+    "PARA/1_Project/CodingRoadmapAssistant",
     "Untitled.canvas",
     "S5cene/3. Resource/SummerCamp/DB.canvas",
     "S5cene/3. Resource/SummerCamp/JavaSpring/attachments/Screenshot 2024-07-09 at 10.31.22.png",
