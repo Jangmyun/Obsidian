@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "PARA/2_Area/CS_Study/OS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "OS"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
+                "file": "PARA/2_Area/CS_Study/OS.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of README"
+              "title": "Outline of OS"
             }
           },
           {
@@ -180,8 +180,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "cb2786aee0f96fd8",
+  "active": "5bb835e2cb3c5a17",
   "lastOpenFiles": [
+    "README.md",
+    "PARA/2_Area/CS_Study/OS.md",
+    "PARA/2_Area/CS_Study",
     "Study/Java_Spring_Boot_3/blog/2_엔티티_구성.md",
     "Study/Java_Spring_Boot_3/blog/1_사전지식.md",
     "Study/Java_Spring_Boot_3/blog",
@@ -212,15 +215,12 @@
     "PARA/4_Archive/React/3. props.md",
     "PARA/4_Archive/React/2. Component 만들기.md",
     "PARA/4_Archive/React/1. 실습환경 구축.md",
-    "PARA/4_Archive/Javascript/카카오맵 API.md",
-    "PARA/4_Archive/Javascript/localStorage 사용법.md",
     "PARA/4_Archive/React",
     "PARA/4_Archive/Javascript",
     "PARA/4_Archive",
     "PARA/1_Project/Gameboy/attachments/Screenshot 2025-01-28 at 12.53.23.png",
     "PARA/1_Project/Gameboy/attachments",
     "PARA/1_Project/Gameboy",
-    "PARA/1_Project/CodingRoadmapAssistant",
     "Untitled.canvas",
     "S5cene/3. Resource/SummerCamp/DB.canvas",
     "S5cene/3. Resource/SummerCamp/JavaSpring/attachments/Screenshot 2024-07-09 at 10.31.22.png",
