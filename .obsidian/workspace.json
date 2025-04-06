@@ -1,14 +1,14 @@
 {
   "main": {
-    "id": "d40a4bbb71115841",
+    "id": "23a2f567f99a4852",
     "type": "split",
     "children": [
       {
-        "id": "f0df8fc5da12492a",
+        "id": "2cc3e03cee9ea5e0",
         "type": "tabs",
         "children": [
           {
-            "id": "f8526e03806092c9",
+            "id": "fced4cbd9f86a4e9",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,6 +20,20 @@
               "icon": "lucide-file",
               "title": "01_Introduction"
             }
+          },
+          {
+            "id": "d92310db3ef57b77",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PARA/1_Project/Gameboy/Register.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Register"
+            }
           }
         ]
       }
@@ -27,15 +41,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "843eaeae780a14a8",
+    "id": "bcb5ac25e3ef9900",
     "type": "split",
     "children": [
       {
-        "id": "960ffd492891632a",
+        "id": "6aec9b0c4ebeb68d",
         "type": "tabs",
         "children": [
           {
-            "id": "2414c19a771db13e",
+            "id": "cb2786aee0f96fd8",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -48,7 +62,7 @@
             }
           },
           {
-            "id": "a4b98ffd537b1b0a",
+            "id": "d7901344d18eb1cd",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -65,7 +79,7 @@
             }
           },
           {
-            "id": "eabb3846844231c2",
+            "id": "2e37962d82a29c53",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -74,27 +88,28 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 302.50418853759766
   },
   "right": {
-    "id": "6efdefa98d1b009e",
+    "id": "84b7f99840ca271a",
     "type": "split",
     "children": [
       {
-        "id": "57d9a3085b528f13",
+        "id": "1996ecf8e3f80524",
         "type": "tabs",
         "children": [
           {
-            "id": "468b7fd50bf276ae",
+            "id": "413242920b6390bc",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PARA/2_Area/CS_Study/OS/01_Introduction.md",
+                "file": "Study/Javascript/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,25 +119,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 01_Introduction"
+              "title": "Backlinks for Untitled"
             }
           },
           {
-            "id": "657f72babeff026a",
+            "id": "041ddc76002d14e7",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PARA/2_Area/CS_Study/OS/01_Introduction.md",
+                "file": "Study/Javascript/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 01_Introduction"
+              "title": "Outgoing links from Untitled"
             }
           },
           {
-            "id": "9936c51c09202539",
+            "id": "25186a3bf2a26ff6",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -137,7 +152,7 @@
             }
           },
           {
-            "id": "5a4822d57153a703",
+            "id": "5d86f31095b6ef7a",
             "type": "leaf",
             "state": {
               "type": "outline",
@@ -150,8 +165,19 @@
               "icon": "lucide-list",
               "title": "Outline of 01_Introduction"
             }
+          },
+          {
+            "id": "a29768de0f64b26b",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -169,14 +195,56 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "f8526e03806092c9",
+  "active": "fced4cbd9f86a4e9",
   "lastOpenFiles": [
-    "PARA/2_Area/CS_Study/OS/OS.md",
+    "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-04-07 at 00.16.42.png",
+    "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-04-07 at 00.04.39.png",
+    "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-04-06 at 23.33.30.png",
+    "PARA/1_Project/Gameboy/Register.md",
     "PARA/2_Area/CS_Study/OS/01_Introduction.md",
-    "PARA/2_Area/CS_Study/OS",
-    "Study/NodeJs_BE/2_NodeJs.md",
+    "PARA/1_Project/Gameboy/Memory.md",
+    "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-04-06 at 23.21.56.png",
+    "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-04-06 at 22.49.58.png",
+    "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-04-06 at 22.49.51.png",
+    "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-04-06 at 22.23.25.png",
+    "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-04-06 at 22.22.59.png",
+    "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-04-06 at 22.22.34.png",
+    "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-04-06 at 22.19.58.png",
+    "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-04-06 at 22.17.46.png",
+    "PARA/1_Project/Gameboy/Assembly_Basics.md",
+    "PARA/1_Project/Gameboy/binary_hexadecimal.md",
+    "PARA/1_Project/Gameboy/1_GameBoy개발환경_세팅과_Hello_World_출력.md",
+    "PARA/1_Project/Gameboy/Header.md",
+    "PARA/2_Area/CS_Study/OS/attachments",
     "Study/NodeJs_BE/js_async_introduction.md",
     "Study/Javascript/연산자.md",
-    "Study/Javascript/비교 연산자.md"
+    "PARA/2_Area/CS_Study/OS/OS.md",
+    "PARA/2_Area/CS_Study/OS",
+    "Study/NodeJs_BE/2_NodeJs.md",
+    "Study/Untitled 1",
+    "Study/Java_Spring_Boot_3/스프링_핵심원리/비즈니스_요구사항과_설계.md",
+    "Study/Java_Spring_Boot_3/Lombok/@Data.md",
+    "Study/Java_Spring_Boot_3/스프링_핵심원리",
+    "Study/Java_Spring_Boot_3/Lombok",
+    "PARA/1_Project/MobileAppDev/DART.md",
+    "PARA/1_Project/PupilDilation",
+    "Study/Java_Spring_Boot_3/blog/2_엔티티_구성.md",
+    "PARA/1_Project/MobileAppDev",
+    "Study/NodeJs_BE",
+    "Study/Java_Spring_Boot_3/JavaSpringBoot3_구조.canvas",
+    "Study/Java_Spring_Boot_3/3_스프링부트_코드_이해하기.md",
+    "PARA/4_Archive/React/React 에서 script태그로 자바스크립트 불러오기.md",
+    "README.md",
+    "Study/Java_Spring_Boot_3/blog/1_사전지식.md",
+    "Study/Java_Spring_Boot_3/blog",
+    "Study/Java_Spring_Boot_3/Test.md",
+    "Study/Java_Spring_Boot_3/ORM.md",
+    "Study/Java_Spring_Boot_3/5_스프링부트_프로젝트_발전시키기.md",
+    "Study/Java_Spring_Boot_3/4_스프링부트_구조_살펴보기.md",
+    "Study/Java_Spring_Boot_3/2_스프링부트_둘러보기.md",
+    "Study/Java_Spring_Boot_3/1_스프링_콘셉트.md",
+    "Study/Java_Spring_Boot_3",
+    "PARA/4_Archive/React/Redux/Redux map.canvas",
+    "S5cene/3. Resource/SummerCamp/DB.canvas"
   ]
 }
