@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Study/Java_Spring_Boot_3/스프링_핵심원리/비즈니스_요구사항과_설계.md",
+                "file": "Study/NodeJs_BE/js_async_introduction.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "비즈니스_요구사항과_설계"
+              "title": "js_async_introduction"
             }
           }
         ]
@@ -182,15 +182,18 @@
   },
   "active": "fced4cbd9f86a4e9",
   "lastOpenFiles": [
-    "Study/Java_Spring_Boot_3/Lombok/@Data.md",
+    "Study/NodeJs_BE/2_NodeJs.md",
+    "Study/NodeJs_BE/js_async_introduction.md",
+    "Study/Untitled 1",
     "Study/Java_Spring_Boot_3/스프링_핵심원리/비즈니스_요구사항과_설계.md",
+    "Study/Java_Spring_Boot_3/Lombok/@Data.md",
     "Study/Java_Spring_Boot_3/스프링_핵심원리",
     "Study/Java_Spring_Boot_3/Lombok",
     "PARA/1_Project/MobileAppDev/DART.md",
     "PARA/1_Project/PupilDilation",
     "Study/Java_Spring_Boot_3/blog/2_엔티티_구성.md",
     "PARA/1_Project/MobileAppDev",
-    "Study/Untitled",
+    "Study/NodeJs_BE",
     "Study/Java_Spring_Boot_3/JavaSpringBoot3_구조.canvas",
     "Study/Java_Spring_Boot_3/3_스프링부트_코드_이해하기.md",
     "PARA/4_Archive/React/React 에서 script태그로 자바스크립트 불러오기.md",
@@ -218,9 +221,6 @@
     "PARA/4_Archive/React/React Router.md",
     "PARA/4_Archive/React/React Query.md",
     "PARA/4_Archive/React/Lazy import.md",
-    "PARA/4_Archive/React/Context API.md",
-    "PARA/4_Archive/React/3. props.md",
-    "PARA/4_Archive/React",
     "PARA/1_Project/Gameboy/attachments/Screenshot 2025-01-28 at 12.53.23.png",
     "S5cene/3. Resource/SummerCamp/DB.canvas",
     "S5cene/3. Resource/SummerCamp/JavaSpring/attachments/Screenshot 2024-07-09 at 10.31.22.png",
