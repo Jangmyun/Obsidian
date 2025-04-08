@@ -93,7 +93,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 302.50418853759766
+    "width": 302.50418853759766,
+    "collapsed": true
   },
   "right": {
     "id": "84b7f99840ca271a",
@@ -197,6 +198,12 @@
   },
   "active": "fced4cbd9f86a4e9",
   "lastOpenFiles": [
+    "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-04-08 at 21.30.26.png",
+    "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-04-08 at 21.25.56.png",
+    "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-04-08 at 21.15.16.png",
+    "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-04-07 at 13.00.13.png",
+    "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-04-07 at 12.45.47.png",
+    "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-04-07 at 00.46.40.png",
     "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-04-07 at 00.16.42.png",
     "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-04-07 at 00.04.39.png",
     "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-04-06 at 23.33.30.png",
@@ -205,12 +212,6 @@
     "PARA/1_Project/Gameboy/Memory.md",
     "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-04-06 at 23.21.56.png",
     "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-04-06 at 22.49.58.png",
-    "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-04-06 at 22.49.51.png",
-    "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-04-06 at 22.23.25.png",
-    "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-04-06 at 22.22.59.png",
-    "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-04-06 at 22.22.34.png",
-    "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-04-06 at 22.19.58.png",
-    "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-04-06 at 22.17.46.png",
     "PARA/1_Project/Gameboy/Assembly_Basics.md",
     "PARA/1_Project/Gameboy/binary_hexadecimal.md",
     "PARA/1_Project/Gameboy/1_GameBoy개발환경_세팅과_Hello_World_출력.md",
