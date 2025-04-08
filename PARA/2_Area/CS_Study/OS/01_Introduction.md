@@ -227,14 +227,114 @@ mode bit가 1이면 user-mode, 0이면 kernel-mode
 
 ## Timer #timer 
 
+> 운영체제가 CPU에 대한 제어권을 유지하도록 보장해야 한다.
+
+- **Timer**를 통해 제어 특정 시간이 지난 후에 interrupt를 발생시키도록 설정할 수 있다.
+	- 타이머는 고정 값을 가질 수도, 가변적일 수도 있다.
+	- variable timer는 **fixed-rate clock** 과 **counter**로 구현할 수 있다.
+		- 운영체제가 카운터 설정
+		- 클럭 틱마다 카운터 감소
+		- 카운터가 0 되면 인터럽트 발생
+
+당연히 timer는 privileged instruction으로만 수정할 수 있다
+
+![[Screenshot 2025-04-07 at 00.46.40.png]]
+
+## Multi-Mode Operation
+
+- 인텔의 프로세서는 4개의 protection rings를 가지고 있다.
+	- Ring 0: kernel mode
+	- Ring 1 and 2: 다양한 운영 체제 서비스, 근데 거의 안씀
+	- Ring 3: user mode
+- ARMv8 시스템은 7개 모드를 가진다.
+- virtualization을 지원하는 CPU는 **VMM (Virtual Machine Manager)** 가 시스템을 제어할 때를 나타내는 별도의 모드 존재
+	- User process보다는 privileges를 가지고 있지만, kernel보다는 적다
+
+# Core components of OS
+
+## Process Management
+### Process란
+- 실행중인 프로그램. 즉, 필요한 자원을 할당받은 active program
+- 싱글 스레드 프로세스는 **PC (Program Counter)** 를 가지고 있다.
+- Unit of work
+
+### Process와 비슷한 개념
+- **Thread**: 한 프로그램이 자신을 동시에 실행되는 두개 이상의 작업으로 분리
+	- CPU utilization의 기본 unit (process보다 작은)
+	- 각 스레드는 ID, PC, register set, stack 등을 가진다.
+	- `Major resources는 스레드 간에 공유된다`
+- **Task**: 메모리에 로드된 프로그램 명령어들의 실행 흐름
+	- 메모리에 로드된 program instruction의 집합
+	- Linux같은 관점에서 task는 프로세스 혹은 프로세스와 스레드를 모두 포함하는 개념
+### Process Management by OS
+- 프로세스 생성과 삭제
+- 프로세스 일시 중단과 재개
+- 프로세스 동기화
+![[Screenshot 2025-04-07 at 12.45.47.png]]
+- 프로세스간 통신
+- **Deadlock**[^deadlock] handling
+![[Screenshot 2025-04-07 at 13.00.13.png]]
+
+## Memory Management
+> Main memory는 CPU가 직접 접근하여 데이터를 읽고 쓸 수 있는 유일한 저장장치이다.
+
+### OS에 의한 메모리 관리
+- 어떤 곳의 메모리를 누가 점유했는지 트래킹
+- 메모리 공간을 할당 및 해제
+- 어떤 프로세스와 데이터를 들여오고 내보낼지 결정 (swap-in, swap-out)
+
+## Storage Management
+
+OS는 물리적 저장장치를 논리적 **file**로 변환
+
+### Device Driver
+디바이스 드라이버는 **uniform interface**를 제공
+![[Screenshot 2025-04-08 at 21.15.16.png]]
+
+🧨`device driver는 소프트웨어이고, device controller는 하드웨어다.`
+
+### File-system management
+- 커널이 파일과 디렉토리의 생성과 삭제 관리
+- 파일/디렉토리 조작의 기본 기능 지원
+- 파일을 보조기억 장치에 매핑
+
+### Mass-Storage management
+
+운영체제는 대용량 저장장치를 관리하면서 **file**이라는 추상적인 개념을 구현
+
+- 빈 공간 관리
+- storage allocation
+- disk scheduling
+	- I/O 요청의 효율성 증가를 위해 디스크 헤드의 움직임을 최적화
 
 
+## Caching
+> 사용된 정보의 임시 복사본을 더 빠른 저장장소인 캐시에 저장하여 다시 사용할 때 빠르게 접근 (참조 지역성[^locality_of_references])
 
+### Cache Coherence (캐시 일관성) 중요!!!!1
+멀티 프로세서 환경은 가장 최신의 값을 가지도록 캐시 일관성을 제공해야 한다.
 
+> Cache coherence란 공유 자원의 로컬 캐시에 저장된 데이터의 무결성(integrity of data)
+
+![[Screenshot 2025-04-08 at 21.25.56.png]]
+즉, 여러 CPU가 공유하는 자원 (like 메인 메모리)에 대해 각 CPU의 로컬 캐시에 저장된 데이터들이 일관되어야 한다는 것 -> 공유 데이터 자원을 변경하면 다른 CPU 캐시들도 변경사항을 반영
+
+c의 `volatile` 키워드는 무조건 메인 메모리에만 쓰라는 캐시 금지 명령어 느낌스의 키워드
+
+## Protection & Security
+#### Protection
+주인이 누군지 명시 (Authentification)
+모든 리소스에 user_account 권한 관리
+
+#### Security
+다른 유저의 access를 허용당하는 것을 방지 (auth 탈취 방지)
+
+![[Screenshot 2025-04-08 at 21.30.26.png]]
 
 
 [^SAN]: consolidated(통합된), block level data storage를 제공하는 dedicated network 
-
+[^deadlock]:교착상태
+[^locality_of_references]: 참조지역성이란 프로세서가 간격에는 동일한 메모리 위치에 반복적으로 액세스 하는 경향이 있음을 뜻한다.
 
 
 
