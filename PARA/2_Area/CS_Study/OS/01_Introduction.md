@@ -14,7 +14,7 @@ OS는 #Kernel 과 additional program 모음
 
 1. Bootstrap program(firmware)이 실행됨 (ex. BIOS, UEFI)
 2. OS kernel
-	1. Boots (init)
+	1. Boots **(init)** (unix에서 init은 pid1인 최초의 프로세스)
 	2. waits for some event
 	3. Handle event
 ![[Screenshot 2025-04-06 at 18.14.30.png]]
@@ -50,7 +50,7 @@ Modern operating systems are **interrupt driven programs**
 	1. #Interrupt_vector 는 시스템에서 발생하는 다양한 종류의 인터럽트 각각에 대응하는 interrupt handler의 시작 주소를 저장
 2. Interrupt가 **ISR (Interrupt Service Routine)** 에 의해 처리
 3. interrupt가 발생했을 때의 프로그램으로 다시 돌아옴
-	1. interrupt handler 실행 전에 기존 프로그램의 주소와 상태를 저장해야 함
+	1. interrupt handler 실행 전에 기존 프로그램의 주소와 상태를 저장해야 함 (Process COntrol Block에 저장)
 
 ### Hardware Process
 ```pseudo
@@ -95,12 +95,14 @@ while(haltFlag not set during execution) {
 ## I/O Device Access
 
 - Old system
-	- Busy waiting - CPU checks devices status periodically
+	- Busy waiting - CPU checks devices status periodically 
+	- I/O가 끝났는지 주기적으로 체크한다.
 ![[Screenshot 2025-04-06 at 22.19.58.png]]
 
 - Modern systems
 	- **Interrupt-driven** I/O
 	- **DMA (Direct Memory Access)** for large bulk of data
+		- CPU를 거쳐 메인메모리 엑세스하지 않고, 직접 접근함으로서 CPU 효율성을 올린다.
 ![[Screenshot 2025-04-06 at 22.17.46.png]]
 
 #### Interrupt-driven I/O Cycle
@@ -181,6 +183,8 @@ Single User는 CPU와 I/O 장치 각 작업 동안 반대쪽은 놀고 있음 ->
 - 각 사용자는 메모리에 최소 한개의 process를 가지고 있다.
 - **CPU scheduler**가 실행할 준비된 작업을 선택
 ![[Screenshot 2025-04-06 at 23.33.30.png]]
+
+#### 🧨 CPU 스케줄링 (timesharing)이 switch를 빠르게 해서 CPU 여러개 실행시키는 것 같은 착시, JOB 스케쥴링은 () ready queue 
 
 ## Virtual Memory
 
