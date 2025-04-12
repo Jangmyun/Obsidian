@@ -51,7 +51,7 @@ Modern operating systems are **interrupt driven programs**
 2. Interrupt가 **ISR (Interrupt Service Routine)** 에 의해 처리
 3. interrupt가 발생했을 때의 프로그램으로 다시 돌아옴
 	1. interrupt handler 실행 전에 기존 프로그램의 주소와 상태를 저장해야 함 (Process COntrol Block에 저장)
-
+![[Screenshot 2025-04-10 at 22.30.02.png]]
 ### Hardware Process
 ```pseudo
 InterruptRequest = false;
