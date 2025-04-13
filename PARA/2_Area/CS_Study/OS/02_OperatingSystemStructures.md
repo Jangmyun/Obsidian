@@ -85,7 +85,7 @@ high level language는 OS의 System call (인터럽트)을 직접 노출하지 �
 2. System-Call Interface로 가서 assembly로 된 instruction 실행
 	1. `movl 5, %eax`는 `eax`레지스터에 `5(open system call number)`를 저장
 3. `int $0x80`: 80번 인터럽트를 발생시키는 명령어를 실행 (System Call 전체를 관장하는 하나의 핸들러 실행)
-4. Interrupt Handling Mechanism이 실행되는데, system-call handler가 look up하는 **System Call Table**에 있는 어드레스로 function call 
+4. Interrupt Handling Mechanism이 실행되는데, system-call handler가 look up하는 **System Call Table**에 있는 어드레스로 function call
 
 인터럽트 핸들러는 같은 번호로 호출되지만 시스템 콜 핸들러는 다르게 호출
 (일반적으로 모든 시스템 콜은 하나의 인터럽트만으로 매핑됨, 리눅스틑 0x80, windows는 0x21) 
@@ -94,7 +94,6 @@ high level language는 OS의 System call (인터럽트)을 직접 노출하지 �
 	- System call interface는 System call number로 인덱싱된 테이블을 유지관리
 - System call interface는 OS 커널에서 의돋된 system call을 호출하고, system call의 상태와 return값을 리턴
 - System call의 호출자는 시스템이 어떻게 구현되어 있는지 알 필요 없고, 그냥 요청하기만 하면 됨
-- 
 
 ### System Call Interface가 하는 일
 
@@ -419,7 +418,6 @@ Layered Approach를 사용할 때는 관계 설계를 잘 해야한다.
 - **Linux, Solaris**: monolithic, modular for dynamic loading of functionality
 - **Windows**: monolithic, microkernel
 - **Mac OS X**:  hybrid, layered
-
 ### MacOS, iOS
 ![[Screenshot 2025-04-12 at 13.38.01.png]]
 

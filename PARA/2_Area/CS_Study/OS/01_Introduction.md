@@ -17,8 +17,9 @@ OS는 #Kernel 과 additional program 모음
 	1. Boots **(init)** (unix에서 init은 pid1인 최초의 프로세스)
 	2. waits for some event
 	3. Handle event
+
 ![[Screenshot 2025-04-06 at 18.14.30.png]]
-Modern operating systems are **interrupt driven programs** 
+Modern operating systems are **interrupt driven programs**
 
 ## Modern Computer System
 ### Common bus
@@ -27,6 +28,8 @@ Modern operating systems are **interrupt driven programs**
 - 각 device controller는 local buffer를 가지고 있다.
 - I/O 작업은 device에서 controller의 local buffer로 이루어짐
 - device controller는 CPU에게 inturrupt를 발생시켜서 작업 완료 됐음을 알린다.
+
+확장성이 좋다
 
 # Interrupt
 ## #Interrupt 란
@@ -50,7 +53,7 @@ Modern operating systems are **interrupt driven programs**
 	1. #Interrupt_vector 는 시스템에서 발생하는 다양한 종류의 인터럽트 각각에 대응하는 interrupt handler의 시작 주소를 저장
 2. Interrupt가 **ISR (Interrupt Service Routine)** 에 의해 처리
 3. interrupt가 발생했을 때의 프로그램으로 다시 돌아옴
-	1. interrupt handler 실행 전에 기존 프로그램의 주소와 상태를 저장해야 함 (Process COntrol Block에 저장)
+	1. interrupt handler 실행 전에 기존 프로그램의 주소와 상태를 저장해야 함 (Process Control Block에 저장)
 ![[Screenshot 2025-04-10 at 22.30.02.png]]
 ### Hardware Process
 ```pseudo
@@ -136,7 +139,9 @@ Master가 slave를 schedule하거나 allocate함
 ##### **NUMA (Non-uniform memory access)**
 > 각각 작고 빠른 로컬 BUS를 통해 자신만의 로컬 메모리에 접근하는 CPU그룹
 
-자신의 로컬 메모리에 접근할 때는 빠르지만, **interconnect**된 다른 노드의 CPU가 접근할 때는 느리다.
+자신의 로컬 메모리에 접근할 때는 빠르지만, **interconnect**된 다른 노드의 CPU가 접근할 때는 느리다
+
+common bus를 너무 많은 cpu가 사용하면 bus 경쟁이 심해서 성능이 떨어진다
 
 ## Multi-Processor System
 
@@ -156,7 +161,7 @@ Master가 slave를 schedule하거나 allocate함
 #### Purpose of Clustered System
 - High-availability 서비스를 제공 (안정성)
 	- Asymmetric clustering은 하나의 기기가 **hot-stanby mode**로 대기 (두대 중에 한대는 비상 시 대기)
-	- Symmetric clustring은 여러 노드가 서로를 주기적으로 모니터링 하면서 어플리케이션 실행 
+	- Symmetric clustering은 여러 노드가 서로를 주기적으로 모니터링 하면서 어플리케이션 실행 
 - Increased Reliability
 	- **Graceful degradation**: 클러스터의 일부 노드에 장애가 발생해도 서비스가 정상적으로 작동을 계속함.
 	- **Fault tolerant**: 일부 장애가 발생하더라도 시스템을 계속 작동하는 속성
@@ -265,7 +270,7 @@ mode bit가 1이면 user-mode, 0이면 kernel-mode
 ### Process와 비슷한 개념
 - **Thread**: 한 프로그램이 자신을 동시에 실행되는 두개 이상의 작업으로 분리
 	- CPU utilization의 기본 unit (process보다 작은)
-	- 각 스레드는 ID, PC, register set, stack 등을 가진다.
+	- 각 스레드는 ID, PC (레지스터 아니고 value), register set, stack 등을 가진다.
 	- `Major resources는 스레드 간에 공유된다`
 - **Task**: 메모리에 로드된 프로그램 명령어들의 실행 흐름
 	- 메모리에 로드된 program instruction의 집합
@@ -283,15 +288,17 @@ mode bit가 1이면 user-mode, 0이면 kernel-mode
 > Main memory는 CPU가 직접 접근하여 데이터를 읽고 쓸 수 있는 유일한 저장장치이다.
 
 ### OS에 의한 메모리 관리
+
 - 어떤 곳의 메모리를 누가 점유했는지 트래킹
 - 메모리 공간을 할당 및 해제
-- 어떤 프로세스와 데이터를 들여오고 내보낼지 결정 (swap-in, swap-out)
+- 어떤 프로세스와 데이터를 들여오고 내보낼지 결정 (swap-in, swap-out) (job scheduler)
 
 ## Storage Management
 
 OS는 물리적 저장장치를 논리적 **file**로 변환
 
 ### Device Driver
+
 디바이스 드라이버는 **uniform interface**를 제공
 ![[Screenshot 2025-04-08 at 21.15.16.png]]
 
@@ -315,7 +322,7 @@ OS는 물리적 저장장치를 논리적 **file**로 변환
 ## Caching
 > 사용된 정보의 임시 복사본을 더 빠른 저장장소인 캐시에 저장하여 다시 사용할 때 빠르게 접근 (참조 지역성[^locality_of_references])
 
-### Cache Coherence (캐시 일관성) 중요!!!!1
+### Cache Coherence (캐시 일관성)
 멀티 프로세서 환경은 가장 최신의 값을 가지도록 캐시 일관성을 제공해야 한다.
 
 > Cache coherence란 공유 자원의 로컬 캐시에 저장된 데이터의 무결성(integrity of data)

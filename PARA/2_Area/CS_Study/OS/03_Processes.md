@@ -10,7 +10,7 @@
 
 ## Process
 
-> 프로세스 = 실행중인 프로그램 + 리소스 
+> 프로세스 = 실행중인 프로그램 + 할당받은 리소스 
 > 메모리에 로드되어 CPU가 실행하고 있는 상태를 말함
 
 - CPU Registers (**program counter (PC)**)
@@ -78,18 +78,19 @@ struct task_struct {
 	struct mm_struct *mm
 };
 ```
+
 - `pid`: process id
 - `state`: state of the process
 - `time_slice`: scheduling information
-- `task_struct *parent`: 자기 프로세스를 생성한 부모 프로세스의 task_structure 구조체 포인터 (유일한 값)
+- `task_struct *parent`: 자기 프로세스를 생성한 부모 프로세스의 task_structure 구조체 포인터 (유일한 값) 
+	- root는 부모가 없다
 - `list_head children`: 자식 프로세스 목록 (linked-list의 헤드값 보유)
 - `mm_struct *mm`: 프로세스의 주소공간 (`mm == memory map`), 가상 메모리 주소 공간에 대한 정보-> 메모리 영역 관리에 사용
-
 
 ---
 # Process Scheduling
 
-## Process Sceduling
+## Process Scheduling
 
 ### Scheduling
 
@@ -115,7 +116,7 @@ struct task_struct {
 
 - Ready queue
 - Job queue <-> Job pool
-- Device queue
+- Device queue (기기마다 따로 존재)
 
 > 각 Queue는 PCB의 linked-list로 표현된다.
 
@@ -229,4 +230,149 @@ Long-term scheduler가 I/O bound와 CPU bound 프로세스를 잘 섞으면, CPU
 
 ## Process creation
 
+### Create-process system call
+
+프로세스를 생성하고 **pid**를 할당한다 `fork()`
+![[Screenshot 2025-04-12 at 16.20.06.png]]
+
+### Process tree
+parent-child relation between processes
+
+![[Screenshot 2025-04-12 at 16.20.47.png]]
+
+parent가 child를 생성하고 자기자신을 terminate하면 끊어진 orphan process에 대해서 pid 1번의 자식 프로세스로 붙여짐
+### Process Creation in UNIX
+[[02_OperatingSystemStructures#`fork()`, `exec()`, `wait()`]]
+![[Screenshot 2025-04-12 at 16.23.36.png]]
+![[Screenshot 2025-04-12 at 16.23.47.png]]
+- `execlp("/bin/ls", "ls", NULL);`
+	- `"/bin/ls"`: 프로그램 위치
+	- `"ls"`: `argv[0]`
+	- `NULL`: `arv[1]`
+argument의 마지막 값은 NULL pointer
+
+```c
+#include <stdio.h>
+#include <unistd.h>
+#include <wait.h>
+
+int main() {
+	pid_t child_pid = fork();
+
+	if(child_pid<0) {// 0보다 작으면 error임
+		fprintf(stderr, "fork failed\n");
+		exit(-1)
+	}
+	else if (child_pid == 0) { // 0이면 child임
+		execlp("/bin/ls", "ls", NULL);
+		exit(-1);
+	}
+	else { // parent
+		wait(NULL);
+		printf("Child Completed\n");
+		exit(0);
+	}
+	return 0;
+}
+```
+
+![[Screenshot 2025-04-12 at 16.28.07.png]]
+
+## More About `fork()`, `exec()`, `wait()`
+
+### fork()
+#### resource of child process
+
+- Data(변수)
+	- 자식 프로세스는 `fork()`호출 되면 부모 프로세스가 가지고 있던 변수들의 값을 **복사**해서 자신만의 메모리 공간에 저장
+	- `fork()`로부터 반환된 pid 값을 제외하고 똑같음 (pid를 통해 자식과 부모 구분)
+- Files
+	- `fork()`전에 열린 파일은 부모와 공유, `fork()`이후에 열린 파일은 공유되지 않음
+
+![[Screenshot 2025-04-12 at 16.47.14.png]]
+
+### exec()
+[[02_OperatingSystemStructures#`exec()`]]
+
+![[Screenshot 2025-04-12 at 16.48.21.png]]
+
+### wait()
+
+`pid_t wait(int *stat_loc)`
+
+- `stat_loc`: 정수 포인터
+	- `stat_loc == NULL`이면 무시됨
+	- NULL이 아니면 자식 프로세스로부터 상태 정보 받음
+		- `wait(&stat)`: stat변수에 자식 프로세스의 상태 저장
+		- `exit(code)`: 자식 프로세스에서 exit형태로 종료
+
+`code == (stat>>8) & 0xff` 연산으로 자식프로세스가 `exit()`에 전달한 종료코드값이 저장된 `stat`변수의 상위 8비트를 추출
+
+- return value
+	- 종료된 자식의 pid
+	- `-1`은 자식 프로세스가 없다는 뜻
+
+## Process Creation in win32
+
+- `CreateProcess()`
+	- `fork()`랑 비슷한데 자식 프로세스 정보를 받아오는 파라미터가 더 많음
+- `WaitForSingleObject()`
+	- `wait()`이랑 비슷
+- `void ZeroMemory(PVOID Destination, SIZE_T Length)`
+	- 메모리 블럭을 0으로 채운다
+
+## Process Termination
+
+- Normal termination
+	- `exit(int return_code)`: child process에 의해 호출
+		- Clean-up action
+			- 메모리 해제
+			- 파일 닫기
+		- return code는 부모 프로세스에 전달
+			- `0`은 성공
+
+---
+# Inter-process Communication (IPC)
+
+## Inter-process Communication
+
+### IPC의 목적: cooperation
+- information sharing
+- Computation speedup
+- Modularity
+- Convenience
+
+### IPC models
+- Message passing model
+- Shared-memory model
+![[Screenshot 2025-04-12 at 19.35.38.png]]
+
+
+## Shared Memory System
+
+### Shared-memory segment
+- 둘 이상의 프로세스가 공유가능한 특수한 메모리 공간
+- shared memory에 들어가는 데이터의 형태와 위치는 OS가 아니라 해당 프로세스들이 결정
+	- 프로세스들은 그들 스스로 동시 writing을 피해야 함
+
+장점 - 빠르다 (프로세스간에 데이터 복사 과정 없이 직접 메모리 공유)
+단점 - **Producer-Consumer problem**
+
+## Producer-Consumer Problem
+
+Producer와 Consumer는 shared memory를 통해 정보를 통신
+
+![[Screenshot 2025-04-12 at 19.55.41.png]]
+
+![[Screenshot 2025-04-12 at 19.56.03.png]]
+
+### Two types of buffer
+
+- Unbounded buffer
+	- 버퍼 사이즈에 제한이 없음
+	- producer는 항상 produce할 수 있음
+- Bounded buffer
+	- buffer가 꽉 차면 producer는 기다려야됨
+
+## Bounded Buffer를 사용한 
 
