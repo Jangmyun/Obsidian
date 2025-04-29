@@ -374,5 +374,4 @@ Producer와 Consumer는 shared memory를 통해 정보를 통신
 - Bounded buffer
 	- buffer가 꽉 차면 producer는 기다려야됨
 
-## Bounded Buffer를 사용한 
-
+## Bounded Buffer를 사용한 가득차면

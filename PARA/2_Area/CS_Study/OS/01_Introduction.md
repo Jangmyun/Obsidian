@@ -160,8 +160,8 @@ common bus를 너무 많은 cpu가 사용하면 bus 경쟁이 심해서 성능�
 
 #### Purpose of Clustered System
 - High-availability 서비스를 제공 (안정성)
-	- Asymmetric clustering은 하나의 기기가 **hot-stanby mode**로 대기 (두대 중에 한대는 비상 시 대기)
-	- Symmetric clustering은 여러 노드가 서로를 주기적으로 모니터링 하면서 어플리케이션 실행 
+	- **Asymmetric clustering**은 하나의 기기가 **hot-stanby mode**로 대기 (두대 중에 한대는 비상 시 대기)
+	- **Symmetric clustering**은 여러 노드가 서로를 주기적으로 모니터링 하면서 어플리케이션 실행 
 - Increased Reliability
 	- **Graceful degradation**: 클러스터의 일부 노드에 장애가 발생해도 서비스가 정상적으로 작동을 계속함.
 	- **Fault tolerant**: 일부 장애가 발생하더라도 시스템을 계속 작동하는 속성
@@ -320,6 +320,7 @@ OS는 물리적 저장장치를 논리적 **file**로 변환
 
 
 ## Caching
+
 > 사용된 정보의 임시 복사본을 더 빠른 저장장소인 캐시에 저장하여 다시 사용할 때 빠르게 접근 (참조 지역성[^locality_of_references])
 
 ### Cache Coherence (캐시 일관성)

@@ -37,3 +37,61 @@ char *args[] = {"ls", "-a", NULL};
         perror("execvp 실패");
 ```
 
+# Producer-Consumer circular queue
+```c
+typedef struct{
+
+}item;
+
+item buffer[BUFFER_SIZE];
+int in =0;
+int out = 0;
+
+// empty/full condition
+in == out; // empty
+(in + 1)%BUFFER_SIZE == out; // full
+
+// insert
+buffer[in] = newItem;
+in = (in + 1)%BUFFER_SIZE;
+
+// extract
+item = buffer[out];
+out = (out + 1)%BUFFER_SIZE;
+```
+
+# Producer-Consumer Bounded Buffer
+```c
+
+// producer
+
+item nextProduced;
+
+while(1){
+	// produce an item in nextProduced
+	while((in+1)%BUFFER_SIZE == out); // waiting
+
+	buffer[in] = nextProduced;
+	in = (in+1)%BUFFER_SIZE;
+}
+
+
+// consumer
+
+item nextConsumed;
+
+while(1){
+
+	while(in==out); // waiting
+	nextConsumed = buffer[out];
+	out = (out+1)%BUFFER_SIZE;
+}
+```
+
+spin lock을 사용하기 때문에 CPU를 소모
+
+
+# System-v shared memory
+```c
+#
+```
