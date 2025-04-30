@@ -184,6 +184,292 @@ priority가 낮은 프로세스는 CPU 자원을 할당받지 못하는 문제
 ![[Screenshot 2025-04-30 at 12.50.09.png]]
 
 RR 스케줄링의 성능은 time quantum size에 의존적
-- time quantum이 개짧음 = processor sharing
-- time quantum이 개길음 = FCFS
+- time quantum이 매우 짧음 = processor sharing
+- time quantum이 매우 김 = FCFS
+
+Turnaround time도 time quantum size에 의존적
+- avg turnaround time은 time quantum size에 정비례하거나 반비례하지 않음 (time quantum 사이즈 조정이 turnaroun time을 좋게 하거나 나쁘게 하지 않는다)
+- 대부분의 프로세스가 cpu burst를 한 time quantum 내에 완료하면 turnaround time 향상
+
+### A rule of thumb
+80%의 CPU burst가 time quantum보다 짧아야 한다.
+
+![[Screenshot 2025-04-29 at 13.57.19.png]]
+
+
+## Multilevel Queue Scheduling
+
+프로세스를 그룹으로 분류하고 서로 다른 스케줄링 전략을 사용
+
+ready queue를 여러개의 queue로 분할
+
+![[Screenshot 2025-04-30 at 17.52.14.png]]
+
+각 queue는 자기들만의 스케줄링 알고리즘이 존재한다.
+
+### Scheduling among queues
+
+#### Fixed-priority preemptive scheduling
+낮은 우선순위 큐의 프로세스는 높은 우선순위 큐가 비어있을 때만 실행가능
+
+후보들 중 우선순위가 높은 프로세스를 선택
+#### Time-slicing among queues
+각 queue에 CPU time의 일정비율을 할당
+
+ex)<br>foreground queue(interactive processes): 80%<br>background queue(batch processes): 20%
+
+`Assignment of a queue to a process is permanent`
+한번 어떤 queue에 들어가면 다른 queue로 이동할 수 없다
+
+
+
+## Multilevel Feedback-Queue Scheduling
+
+multilevel queue scheduling과 비슷한데, 이제 프로세스가 queue간에 이동가능한..
+
+### Idea: **CPU burst 특성에 따라 프로세스를 분리**
+
+**CPU time을 너무 많이 사용하는 프로세스**를 더 낮은 우선순위의 큐로 이동
+**I/O-bound (interactive) 프로세스**는 더 높은 우선순위의 큐로 이동
+
+![[Screenshot 2025-04-30 at 18.55.14.png]]
+
+### Parameters to define a multilevel feedback-queue scheduler
+
+- `#` of queue
+- Scheduling algorithm for each queue
+- Method to determine when to upgrade a process to higher priority queue
+- Method to determine when to demote a process to lower priority queue
+- Method to determine which queue a process will enter when it needs service
+
+
+---
+# Multiple -processor scheduling
+
+## Multiple-Processor Scheduling
+
+### Multiple-processor system
+
+load balancing 가능
+스케줄링이 복잡해진다 (하던 프로세스가 하던일 계속하는 게 좋다 (캐싱이슈))
+
+해당 책에서는 **Symmetric Multiprocessing** 시스템이라고 가정
+
+### Two possible strategies
+
+1. 모든 스레드가 하나의 common ready에 있을 수 있음
+2. 각 프로세서별로 자체적인 개인 스레드 큐를 가질 수 있음
+
+![[Pasted image 20250430192929.png]]
+
+## Processor Affinity 프로세서 친화성
+
+하나의 프로세서에서 다른 프로세서로 프로세스를 이동시키는 데에는 오버헤드가 있음.
+`migration overhead`
+캐시 내용이 쓸모없어지고 다시 채워야함
+
+### Processor Affinity
+
+migration 오버헤드를 피하기 위해 프로세스를 동일한 프로세서에서 계속 실행하도록 한다
+
+#### Soft affinity
+OS가 동일한 프로세서에서 프로세스를 실행하려고 하는데, 마이그레이션은 가능함
+
+#### Hard affinity
+프로세스의 마이그레이션을 막을 수 있음
+
+### NUMA (Non-Uniform Memory Access)
+에서는 affinity가 특히 중요하다
+프로세서마다 로컬 메모리가 있고 서로 메모리 접근할 때 느릴 수 있기 때문
+
+## Load balancing
+
+> 모든 프로세서에 workload를 이븐하게 분배
+
+#### Push migration
+주기적으로 각 프로세서의 load 확인
+언밸런스하면 프로세스를 덜 바쁜 프로세서로 이동 (일을 떠맡김)
+#### Pull migration
+유휴 프로세서가 대기중인 작업을 가져옴
+
+`위 두 migration 방법은 병렬로 구현가능`
+
+`로드 밸런싱과 프로세서 affinity는 서로의 장점을 상쇄할 수도 있음`
+
+## Multi-core Processor
+
+### Scheduling issues on multi-core processor
+
+#### Memory stall
+메모리 접근 시 데이터가 사용 가능해질 때까지 상당한 시간이 소요
+ex) 캐시에 없는 데이터에 접근할 때
+
+멀티스레드 프로세서 코어로 **memory stall** 해결가능
+
+![[Screenshot 2025-04-30 at 20.52.07.png]]
+
+---
+
+# Thread scheduling
+
+## Thread scheduling
+
+### Threads
+
+- User thread: 스레드 라이브러리가 제공
+	- **LWP**에 의해 간접적으로 스케줄링
+- Kernel thread: OS 커널이 제공 (**실제 스케줄링 단위**)
+
+운영체제는 사실 프로세스가 아니라 커널 스레드를 스케줄링하는 거임
+
+## Contention Scope 경쟁범위
+
+### Process-contention scope (PCS)
+
+- 사용자 스레드 간 LWP competetion
+	- many-to-one 또는 many-to-many
+		- 스레드 라이브러리가 어떤 사용자 스레드에 LWP 할당할지 결정
+- Priority based
+
+### System-contention scope (SCS)
+
+- 커널 스레드 간 CPU competition
+
+![[Screenshot 2025-04-30 at 21.14.54.png]]
+
+## Pthread Scheduling
+
+pthread 만들 때 `PCS`와 `SCS`를 지정할 수 있다
+
+- PCS: `PTHREAD_SCOPE_PROCESS`
+- SCS: `PTHREAD_SCOPE_SYSTEM`
+
+### functions
+
+`pthread_attr_setscope(pthread_attr_t *attr, int scope)`
+`pthread_attr_getscope(pthread_attr_t *attr, int *scope)`
+
+#### 예제
+```c
+#include <stdio.h>
+#include <unistd.h>
+#include <pthread.h>
+#include <stdlib.h>
+
+void* runner(void* arg){
+	printf("thread runner\n");
+	return NULL;
+}
+
+int main() {
+
+	pthread_t tid = 0;
+	pthread_attr_t attr;
+	int scope = 0;
+
+	pthread_attr_init(&attr);
+
+	pthread_attr_getscope(&attr, &scope);
+	printf("pthread attr scope: %d\n", scope);
+	
+	if(scope == PTHREAD_SCOPE_PROCESS){
+		printf("PTHREAD_SCOPE_PROCESS\n");
+	}else if(scope == PTHREAD_SCOPE_SYSTEM) {
+		printf("PTHREAD_SCOPE_SYSTEM\n");
+	}
+
+	pthread_create(&tid, &attr, runner, NULL);
+
+	pthread_join(tid, NULL);
+
+	return 0;
+}
+```
+
+
+## Real-time CPU Scheduling
+
+### Real-time Operating Systems (RTOS)
+- real-time 시스템을 지원하기 위해 설계된
+
+#### Soft real-time systems
+- critical real-time 프로세스가 언제 스케줄링 될지에 대한 보장 없음
+- noncritical 프로세스보다 먼저 처리될 것이라는 보장은 됨
+
+#### Hard real-time systems
+task가 deadline안에 무조건 처리돼야 함
+deadline 못지키면 처리 안된 것. (시스템 오작동 가능성 있)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### 예제
+
+```c
+#include <stdio.h>
+#include <unistd.h>
+#include <pthread.h>
+#include <stdlib.h>
+
+#define NUM_THREADS 3
+
+void* runner(void* arg){
+	printf("thread\n");
+	return NULL;
+}
+
+int main() {
+	int i=0, policy =0;
+	pthread_t tid[NUM_THREADS]= {0};
+	pthread_attr_t attr;
+
+	pthread_attr_init(&attr);
+
+	if(pthread_attr_getschedpolicy(&attr, &policy) != 0){
+		fprintf(stderr, "Unable to get policy\n");
+	} else {
+		if(policy == SCHED_OTHER){
+			printf("SCHED OTHER\n");
+		}else if(policy == SCHED_RR){
+			printf("SCHED_RR\n");
+		}else if(policy == SCHED_FIFO){
+			printf("SCHED_FIFO\n");
+		}
+	}
+
+	if(pthread_attr_setschedpolicy(&attr, SCHED_FIFO)!=0){
+		fprintf(stderr, "Unable to set policy\n");
+	}
+
+	for(i=0; i<NUM_THREADS; i++){
+		pthread_create(&tid[i], &attr, runner, NULL);
+	}
+
+	for(i=0; i<NUM_THREADS; i++){
+		pthread_join(tid[i], NULL);
+	}
+
+	return 0;
+}
+```
+
+
+
+
+
 
