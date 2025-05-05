@@ -400,7 +400,32 @@ int main() {
 task가 deadline안에 무조건 처리돼야 함
 deadline 못지키면 처리 안된 것. (시스템 오작동 가능성 있)
 
+> 대부분의 real-time 시스템은 **event-driven 시스템**이다.
 
+### Event latency
+이벤트 발생 시점부터 처리 시점까지 경과한 시간
+![[Screenshot 2025-05-05 at 14.28.16.png]]
+
+이벤트 레이턴시는 짧을수록 좋다
+
+### Interrupt Latency
+CPU에 인터럽트가 도착한 시점부터 해당 인터럽트 서비스 루틴이 시작하기까지 걸리는 시간
+![[Screenshot 2025-05-05 at 14.30.22.png]]
+
+### Dispatch Latency
+스케줄링 디스패처가 프로세스를 중단하고 다른 프로세스를 실행하는 데 걸리는 시간
+
+> **preemptive 커널**은 dispatch latency를 낮게 유지하는 가장 효율적인 테크닉
+
+![[Screenshot 2025-05-05 at 14.32.27.png]]
+
+#### Conflict phase 충돌 단계
+1. Preemption of any process running in the kernel (커널에서 실행중인 모든 프로세스의 선점)
+	1. 높은 우선순위의 실시간 프로세스가 준비 상태가 되었을 때, 만약 현재 커널 모드에서 실행 중인 낮은 우선순위의 프로세스가 있다면, 이 프로세스의 실행을 즉시 중단시키는 과정입니다. 선점형 커널에서는 시스템 호출과 같은 커널 코드 실행 중에도 더 높은 우선순위의 프로세스가 도착하면 선점이 발생할 수 있습니다
+2. Release of resources occupied by low-priority processes needed by a high-priority process (높은 우선순위 프로세스가 필요로 하는 자원을 낮은 우선순위 프로세스가 점유하고 있는 경우, 해당 자원을 해제하는 과정)
+	1. 높은 우선순위의 프로세스가 실행되기 위해 특정 자원 (예: 뮤텍스, 세마포어, 공유 메모리)을 필요로 하지만, 현재 낮은 우선순위의 프로세스가 이 자원을 점유하고 있는 경우, 낮은 우선순위 프로세스가 자원을 반납할 때까지 높은 우선순위 프로세스는 대기해야 합니다. 자원 경합이 발생하면 디스패치 지연 시간이 늘어날 수 있습니다. 특히 우선순위 역전 (priority inversion)과 같은 문제가 발생하면 예측 불가능한 지연이 발생할 수 있습니다
+
+## Priority-based Scheduling
 
 
 
