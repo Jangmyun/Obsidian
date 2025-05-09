@@ -1,4 +1,4 @@
-# CPU Scheduling
+ # CPU Scheduling
 
 ## Basic Concepts
 
@@ -426,6 +426,15 @@ CPU에 인터럽트가 도착한 시점부터 해당 인터럽트 서비스 루�
 	1. 높은 우선순위의 프로세스가 실행되기 위해 특정 자원 (예: 뮤텍스, 세마포어, 공유 메모리)을 필요로 하지만, 현재 낮은 우선순위의 프로세스가 이 자원을 점유하고 있는 경우, 낮은 우선순위 프로세스가 자원을 반납할 때까지 높은 우선순위 프로세스는 대기해야 합니다. 자원 경합이 발생하면 디스패치 지연 시간이 늘어날 수 있습니다. 특히 우선순위 역전 (priority inversion)과 같은 문제가 발생하면 예측 불가능한 지연이 발생할 수 있습니다
 
 ## Priority-based Scheduling
+
+`RTOS`에서 가장 중요한 특징은 real-time 프로세스에 즉시 응답하는 것이다.
+따라서 스케줄러는 **priority-based preemptive** 알고리즘을 지원해야 함
+
+**priority-based preemptive** 스케줄러는 soft real-time 기능만 보장한다.
+#### Hard real-time system
+**Hard real-time system**은 real-time task가 마감시간 requirements에 따라 처리될 것이라는 것을 추가적으로 보장해야 한다.
+
+
 
 
 
