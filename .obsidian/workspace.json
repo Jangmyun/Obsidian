@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PARA/2_Area/CS_Study/OS/Mutex_Semaphore.md",
+                "file": "PARA/2_Area/CS_Study/OS/6_Process_Synchronization.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Mutex_Semaphore"
+              "title": "6_Process_Synchronization"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 205.5110321044922
+    "width": 205.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "84b7f99840ca271a",
@@ -142,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PARA/2_Area/CS_Study/OS/5_CPU_Scheduling.md",
+                "file": "PARA/2_Area/CS_Study/OS/6_Process_Synchronization.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 5_CPU_Scheduling"
+              "title": "Outline of 6_Process_Synchronization"
             }
           },
           {
@@ -162,7 +163,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -182,8 +183,9 @@
   },
   "active": "8b4c82bd4d9cda31",
   "lastOpenFiles": [
-    "PARA/2_Area/CS_Study/OS/6_Process_Synchronization.md",
+    "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-05-29 at 02.25.30.png",
     "PARA/2_Area/CS_Study/OS/Mutex_Semaphore.md",
+    "PARA/2_Area/CS_Study/OS/6_Process_Synchronization.md",
     "PARA/2_Area/CS_Study/OS/5_CPU_Scheduling.md",
     "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-05-05 at 14.32.27.png",
     "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-05-05 at 14.30.22.png",
@@ -227,7 +229,6 @@
     "Study/Java_Spring_Boot_3/Lombok/@Data.md",
     "Study/Java_Spring_Boot_3/스프링_핵심원리",
     "Study/Java_Spring_Boot_3/Lombok",
-    "PARA/1_Project/MobileAppDev/DART.md",
     "Study/Java_Spring_Boot_3/JavaSpringBoot3_구조.canvas",
     "PARA/4_Archive/React/Redux/Redux map.canvas",
     "S5cene/3. Resource/SummerCamp/DB.canvas"
