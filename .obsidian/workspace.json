@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 205.5110321044922,
-    "collapsed": true
+    "width": 205.5110321044922
   },
   "right": {
     "id": "84b7f99840ca271a",
@@ -183,9 +182,11 @@
   },
   "active": "8b4c82bd4d9cda31",
   "lastOpenFiles": [
+    "PARA/2_Area/CS_Study/OS/Chapter_1-3_example_codes.md",
+    "PARA/2_Area/CS_Study/OS/6_Process_Synchronization.md",
+    "PARA/2_Area/CS_Study/OS/attachments/Pasted image 20250603232829.png",
     "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-05-29 at 02.25.30.png",
     "PARA/2_Area/CS_Study/OS/Mutex_Semaphore.md",
-    "PARA/2_Area/CS_Study/OS/6_Process_Synchronization.md",
     "PARA/2_Area/CS_Study/OS/5_CPU_Scheduling.md",
     "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-05-05 at 14.32.27.png",
     "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-05-05 at 14.30.22.png",
@@ -195,8 +196,6 @@
     "PARA/2_Area/CS_Study/OS/attachments/Pasted image 20250430192929.png",
     "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-04-30 at 18.55.14.png",
     "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-04-30 at 17.52.14.png",
-    "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-04-30 at 12.50.09.png",
-    "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-04-30 at 12.13.16.png",
     "PARA/2_Area/CS_Study/OS/midterm/기억할만한_기법.md",
     "PARA/2_Area/CS_Study/OS/5_CPU_Scheduling",
     "PARA/2_Area/CS_Study/OS/Untitled",
@@ -209,7 +208,6 @@
     "PARA/2_Area/CS_Study/OS/midterm/HW2.md",
     "PARA/2_Area/CS_Study/OS/midterm/Untitled",
     "PARA/2_Area/CS_Study/OS/midterm/Commands.md",
-    "PARA/2_Area/CS_Study/OS/Chapter_1-3_example_codes.md",
     "PARA/2_Area/CS_Study/OS/midterm",
     "PARA/2_Area/CS_Study/OS/03_Processes.md",
     "PARA/4_Archive/React/Redux/Redux Toolkit.md",
