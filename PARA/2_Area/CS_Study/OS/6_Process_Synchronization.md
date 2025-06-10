@@ -92,7 +92,7 @@ Critical section에서 실행중인 프로세스가 없을 때, Remainder sectio
 
 커널은 프로세스와 스레드가 공유하는 핵심 데이터 구조와 리소스를 관리
 
-#### Non-preemptive kernel
+#### Non-preemptive 
 프로세스가 커널모드에서 실행중일 경우 context switching 이 발생할 수 없다.
 
 race condition으로부터 자유롭다.
@@ -103,6 +103,141 @@ critical section 문제를 해결한 preemptive kernel은
 real-time programming에 더 적합 (응답성이 좋다.)
 
 ## Peterson's Solution
+critical section problem을 해결하기 위한 S/W적 솔루션
+`load/store` 명령어 때문에 일부 아키텍쳐에서 정상 작동 보장x
+
+- `P_0`과 `P_1` 프로세스
+- `int turn`: 어떤 프로세스가 critical section에서 실행되도록 허용 됐는지 (initial=0)
+- `boolean flag[2]`: `flag[i]`가 true면 `P_i`는 critical section에 들어갈 준비됨
+
+### Erroneous Algorithm 1
+
+#### P_i
+```c
+do {
+	while (turn != i); // 자신 차례가 될 때까지 대기
+	// critical section
+	turn = j; // 상대방 턴으로 넘기기
+	// remainder section
+} while (1);
+```
+
+#### P_0
+```c
+do {
+    while (turn != 0); // turn이 0이 될 때까지 대기
+    //critical section
+    turn = 1;          // P1에게 차례 넘기기
+    //remainder section
+} while (1);
+```
+
+#### P_1
+```c
+do {
+    while (turn != 1); // turn이 1이 될 때까지 대기
+    //critical section
+    turn = 0;          // P0에게 차례 넘기기
+    //remainder section
+} while (1);
+```
+
+위 패턴은 **mutual exclusion**은 보장되지만 **progress**는 보장되지 않음
+
+#### 시나리오
+1. turn = 0`으로 시작
+2. P0 실행되어 critical section에서 작업 완료 후 `turn = 1`
+3. `turn == 1`이지만 P1이 critical section에 진입할 의사가 없음
+4. P0가 remainder section을 마치고 다시 critical section에 들어가고자 하지만 P1이 `turn = 0`을 실행할 때까지 대기해야함.
 
 
+### Erroneous Algorithm 2
+#### P0
+```c
+do {
+    flag[0] = true;     // P0이 진입 의사 알림
+    while(flag[1]);     // P1이 진입 의사가 있는지 확인
+    //critical section
+    flag[0] = false;
+    //remainder section
+} while (1);
+```
 
+#### P1
+```c
+do {
+    flag[1] = true;     // P1이 진입 의사 알림
+    while(flag[0]);     // P0이 진입 의사가 있는지 확인
+    //critical section
+    flag[1] = false;
+    //remainder section
+} while (1);
+```
+
+위 패턴은 **mutual exclusion**은 보장되지만 **progress**는 보장되지 않음
+
+#### 시나리오
+1. P0와 P1이 거의 동시에 실행되어 `flag[0]`과 `flag[1]`이 모두 `true` 
+2. P0와 P1 모두 `while(flag[j])`에서 무한 대기 상태에 빠짐
+
+### Peterson's Solution
+
+*Peterson's solution*은 세 개의 conditions를 모두 보장한다.
+#### P0
+```c
+do {
+    flag[0] = true;             
+    turn = 1;                   
+    while (flag[1] && turn == 1);
+    // critical section            
+    flag[0] = false;            
+    // remainder section           
+} while (1);
+```
+
+#### P1
+```c
+do {
+    flag[1] = true;             
+    turn = 0;                   
+    while (flag[0] && turn == 0);
+    // critical section            
+    flag[1] = false;            
+    // remainder section           
+} while (1);
+```
+
+#### Mutual Exclusion 증명
+
+P0과 P1이 동시에 critical section에 진입했다는 것은
+- P0이 `while(flag[1] && turn == 1)`를 통과함
+- P1이 `while(flag[0] && turn == 0)`를 통과함
+을 의미함
+
+`flag[0] = flat[1] = true`s
+`turn`변수는 0이면서 동시에 1일 수 없다.
+
+
+#### Progress, Bounded Waiting 증명
+
+- `Pi`의 blocking 조건: `while(flag[j]==true && turn ==j);`
+	- `Pj`가 critical section에 진입할 의사가 있고, `Pj`에게 차례가 넘어갔을 때만 대기
+- **Case 1**: `Pj`가 `flag[j] == false`일 때 (critical section 진입할 의사가 없는 경우)
+	- `Pi`의 while 조건이 `false`가 되어 바로 critical section 진입
+- **Case 2**: `Pj`가 `flag[j] == true`일 때 (critical section에 진입하고자 할 경우)
+	- `flag[i] = flag[j] = true`이고 `turn`은 `Pi`와 `Pj`중 마지막으로 썼는지에 따라 결정
+		- `turn == i`면 `Pj`는 대기, `Pi`는 critical section 진입
+		- `turn == j`면 `Pj`가 critical section 진입
+
+`Pj`가 critical section에서 작업을 마치고 `flag[j] = false`를 실행하면 그 순간 `Pi`의 while문이 `false`가 되어 critical section에 진입가능함.
+
+어떤 경우든 `Pi`나 `Pj`중 하나는 while문을 통과하여 critical section에 진입 (**Progress**)
+
+최대 한 번만 기다리면 critical section에 진입가능함 (**Bounded waiting**)
+
+### Peterson's Solution의 문제
+
+현대 컴퓨터 아키텍처에서는 동작을 보장하지 않는다.
+
+- 시스템 퍼포먼스 향상을 위해 프로세서 또는 컴파일러는 읽기/쓰기 연산을 **reorder**할 수 있다.
+- 공유 데이터를 사용하는 멀티스레드 앱의 경우 명령어 재배열로 인해 예상치 못한 결과가 나올 수 있다.
