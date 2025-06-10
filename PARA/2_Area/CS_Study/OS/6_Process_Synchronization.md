@@ -241,3 +241,198 @@ P0과 P1이 동시에 critical section에 진입했다는 것은
 
 - 시스템 퍼포먼스 향상을 위해 프로세서 또는 컴파일러는 읽기/쓰기 연산을 **reorder**할 수 있다.
 - 공유 데이터를 사용하는 멀티스레드 앱의 경우 명령어 재배열로 인해 예상치 못한 결과가 나올 수 있다.
+
+
+## H/W Support for Synchronization
+
+### Memory Model
+Memory model: how a computer architecture determines what memory guarantees it will provide to an application program.
+
+컴퓨터 아키텍처가 프로그램에 어떤 메모리 보장을 제공할 것인지 결정하는 방법
+
+#### Strongly ordered
+한 프로세서에서 발생한 메모리 수정이 다른 모든 프로세서에서 즉시 **visible**
+
+#### Weakly ordered
+메모리 수정이 다른 프로세서에게 즉시 visible하지 않을 수 있다.
+
+### Memory Barriers (Memory fences)
+
+메모리의 모든 변경 사항이  다른 프로세서로 propageted 되도록 강제할 수 있는 instruction
+
+### Hardware Instructions
+Critical Section problem은 **lock**을 통해 방지
+```c
+do {
+    acquire lock; // lock 획득  
+	    // critical section;   
+    release lock; // lock 해제
+	    // remainder section;  
+} while(TRUE);
+```
+
+### Mutual Exclusion by Lock Variable
+공유 변수 `lock` 을 통해 **mutual exclusion**을 보장하기
+
+- `Boolean lock = 0`
+- `lock`이 `false`면 어떤 프로세스든 critical section에 진입 가능
+- 프로세스가 critical section에 진입할 때 `lock`을 `true`로
+
+#### P0, P1
+```c
+do {
+    while(lock);      
+    lock = true;      
+	    // critical section
+    lock = false;     
+	    // remainder section
+} while(TRUE);
+```
+
+checking과 locking이 **원자성(atomicity)** 을 보장하지 않으면 mutual exclusion을 보장할 수 없다.
+
+### Interrupt Disable
+single processor 시스템에서는 **disabling interrupt**로 critical section problem을 해결 = **Non-preemptive kernel**
+
+#### problems
+- 멀티 프로세서 환경에서 비효율
+- 일부 시스템에서는 클럭이 인터럽트에 의해 업데이트된다.
+
+### Hardware Instructions
+
+하드웨어에서 **atomic instruction**을 제공한다면 locking을 구현하기 쉬움
+
+`boolean lock = false;`
+#### TestAndSet
+```c
+boolean TestAndSet(boolean *target) {
+	boolean rv = *target;
+	*target = true;
+	return rv;
+}
+```
+
+```c
+do {
+	while(TestAndSet(&lock));
+	// critical
+	lock = false;
+	// remainder
+} while (1);
+```
+#### Swap
+```c
+void Swap(boolean *a, boolean *b){
+	boolean temp = *a;
+	*a = *b;
+	*b = temp;
+}
+```
+
+```c
+do {
+	key = true; // local var
+	while(key == true)
+		Swap(&lock, &key);
+	// critical
+	lock = false;
+	// remainder
+} while (1);
+```
+#### CompareAndSwap
+```c
+int CompareAndSwap(int *value, int expected, int new_value){
+	int temp = *value;
+	if(*value == expected)
+		*value = new_value;
+	return temp;
+}
+```
+
+```c
+while(true) {
+	while(CompareAndSwap(&lock, 0, 1) != 0);
+	// critical
+	lock = 0;
+	// remainder
+}
+```
+
+### Bounded Waiting Mutual Exclusion
+
+N 개의 프로세스를 위한 Bounded waiting
+![[Screenshot 2025-06-10 at 22.22.12.png]]
+P0, P1, P3, P5는 critical section에 진입하기를 원하는 상황에서 Bounded waiting을 보장
+
+`boolean lock;`
+`boolean waiting[n]`
+
+```c
+while(TRUE){
+	waiting[i] = TRUE;
+	key = TRUE; // local var
+	while(waiting[i] && key)
+		key = TestAndSet(&lock);
+	waiting[i] = FALSE;
+
+	// critical
+
+	j = (i+1) % n;
+	while(j!=i && !waiting[j])
+		j = (j+1) % n;
+
+	if(j==i)
+		lock = FALSE;
+	else
+		waiting[j] = FALSE;
+	
+	// remainder
+}
+```
+
+```c
+while(true) {
+    // 1. 진입 구역 (Entry Section)
+    waiting[i] = true; // Pi가 임계 구역 진입을 원한다고 표시
+    int key = 1;       // 지역 변수 'key'를 1로 초기화 (CAS 시도 신호)
+
+    // waiting[i]가 true이고 key가 1인 동안 반복 (바쁜 대기)
+    // CAS가 lock을 0에서 1로 성공적으로 변경하고 0을 반환하면 루프 탈출
+    while (waiting[i] && key) {
+        key = compare_and_swap(&lock, 0, 1);
+    }
+    waiting[i] = false; // 임계 구역 진입이 허가되었으므로 대기 상태 아님을 표시
+
+    /* critical section */ // 2. 임계 구역 (Critical Section)
+    // 공유 데이터 접근 및 수정
+
+    // 3. 퇴출 구역 (Exit Section)
+    j = (i + 1) % n; // 다음 차례 프로세스를 i+1부터 순환적으로 탐색 시작
+
+    // j가 다시 i가 되거나, waiting[j]가 true인 프로세스를 찾을 때까지 순환 탐색
+    while ((j != i) && !waiting[j]) {
+        j = (j + 1) % n;
+    }
+
+    if (j == i) {      // (a) 모든 프로세스를 순회했지만, 대기 중인 다른 프로세스가 없는 경우
+        lock = 0;      // 락을 해제하여 임계 구역을 자유롭게 만듦
+    } else {           // (b) 대기 중인 다음 프로세스 Pj를 찾은 경우
+        waiting[j] = false; // Pj에게 임계 구역에 진입해도 좋다는 "허가"를 줌
+                            // Pj는 자신의 while(waiting[j] && key) 루프를 통과할 수 있게 됨
+    }
+
+    /* remainder section */ // 4. 나머지 구역 (Remainder Section)
+    // 임계 구역과 관련 없는 작업
+}
+```
+
+![[Screenshot 2025-06-10 at 22.34.44.png]]
+
+### Atomic Variables
+int나 bool같은 기본 데이터 타입에 **atomic operation**을 제공
+
+mutual exclusion 보장을 위해 사용가능
+
+**Compare And Swap**(CAS) 같은 atomic instruction으로 구현됨
+
+
