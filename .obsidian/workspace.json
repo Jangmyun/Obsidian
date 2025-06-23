@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "75502900e4c17707",
+        "id": "c5b4093bd75d6c14",
         "type": "tabs",
         "children": [
           {
-            "id": "02f800d2b7c7a61f",
+            "id": "5c64a19d4632e56b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PARA/2_Area/CS_Study/OS/6_Process_Synchronization.md",
+                "file": "PARA/2_Area/CS_Study/PLT/02_Introduction_to_Scala.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "6_Process_Synchronization"
+              "title": "02_Introduction_to_Scala"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 205.5110321044922,
-    "collapsed": true
+    "width": 205.5110321044922
   },
   "right": {
     "id": "84b7f99840ca271a",
@@ -143,13 +142,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PARA/2_Area/CS_Study/OS/6_Process_Synchronization.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 6_Process_Synchronization"
+              "title": "Outline"
             }
           },
           {
@@ -181,12 +179,16 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "02f800d2b7c7a61f",
+  "active": "5c64a19d4632e56b",
   "lastOpenFiles": [
+    "PARA/2_Area/CS_Study/PLT/01_How_to_Design_Programs.md",
+    "PARA/2_Area/CS_Study/PLT/02_Introduction_to_Scala.md",
+    "sdlkfj.md",
+    "PARA/2_Area/CS_Study/PLT",
+    "PARA/2_Area/CS_Study/OS/6_Process_Synchronization.md",
     "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-06-10 at 22.34.44.png",
     "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-06-10 at 22.22.12.png",
     "PARA/2_Area/CS_Study/OS/Mutex_Semaphore.md",
-    "PARA/2_Area/CS_Study/OS/6_Process_Synchronization.md",
     "PARA/2_Area/CS_Study/OS/finalterm/Homework3.md",
     "PARA/2_Area/CS_Study/OS/finalterm",
     "PARA/2_Area/CS_Study/OS/midterm/Commands.md",
@@ -203,7 +205,6 @@
     "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-05-05 at 14.28.16.png",
     "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-04-30 at 21.14.54.png",
     "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-04-30 at 20.52.07.png",
-    "PARA/2_Area/CS_Study/OS/attachments/Pasted image 20250430192929.png",
     "PARA/2_Area/CS_Study/OS/midterm/기억할만한_기법.md",
     "PARA/2_Area/CS_Study/OS/5_CPU_Scheduling",
     "PARA/2_Area/CS_Study/OS/Untitled",
@@ -226,9 +227,6 @@
     "PARA/1_Project/Gameboy/Header.md",
     "PARA/2_Area/CS_Study/OS/attachments",
     "Study/NodeJs_BE/js_async_introduction.md",
-    "Study/Javascript/연산자.md",
-    "PARA/2_Area/CS_Study/OS",
-    "Study/NodeJs_BE/2_NodeJs.md",
     "Study/Java_Spring_Boot_3/JavaSpringBoot3_구조.canvas",
     "PARA/4_Archive/React/Redux/Redux map.canvas",
     "S5cene/3. Resource/SummerCamp/DB.canvas"
