@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PARA/2_Area/CS_Study/PLT/02_Introduction_to_Scala.md",
+                "file": "PARA/2_Area/CS_Study/PLT/lecture/01_02_How_to_Design_Progams.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02_Introduction_to_Scala"
+              "title": "01_02_How_to_Design_Progams"
             }
           }
         ]
@@ -142,12 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "PARA/2_Area/CS_Study/PLT/lecture/01_02_How_to_Design_Progams.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of 01_02_How_to_Design_Progams"
             }
           },
           {
@@ -179,32 +180,37 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "5c64a19d4632e56b",
+  "active": "cb2786aee0f96fd8",
   "lastOpenFiles": [
-    "PARA/2_Area/CS_Study/PLT/01_How_to_Design_Programs.md",
+    "PARA/2_Area/Untitled",
+    "PARA/2_Area/CS_Study/PLT/lecture/attachments/Screenshot 2025-06-24 at 17.09.51.png",
+    "PARA/2_Area/CS_Study/PLT/lecture/attachments/Screenshot 2025-06-24 at 17.09.25.png",
+    "PARA/2_Area/CS_Study/PLT/lecture/attachments/Screenshot 2025-06-24 at 17.04.57.png",
+    "PARA/2_Area/CS_Study/PLT/lecture/attachments/Screenshot 2025-06-24 at 15.40.14.png",
+    "PARA/2_Area/CS_Study/PLT/lecture/attachments/Screenshot 2025-06-24 at 15.26.28.png",
+    "PARA/2_Area/CS_Study/PLT/lecture/attachments/Screenshot 2025-06-24 at 15.21.25.png",
+    "PARA/2_Area/CS_Study/PLT/lecture/attachments/Screenshot 2025-06-24 at 15.19.52.png",
+    "PARA/2_Area/CS_Study/PLT/lecture/attachments/Screenshot 2025-06-24 at 15.19.13.png",
+    "PARA/2_Area/CS_Study/PLT/lecture/attachments/Screenshot 2025-06-24 at 10.07.08.png",
+    "PARA/2_Area/CS_Study/PLT/lecture/attachments/Screenshot 2025-06-24 at 02.55.21.png",
     "PARA/2_Area/CS_Study/PLT/02_Introduction_to_Scala.md",
+    "PARA/2_Area/CS_Study/PLT/Backus-Naur_Form.md",
+    "PARA/2_Area/CS_Study/PLT/lecture/01_02_How_to_Design_Progams.md",
+    "PARA/2_Area/CS_Study/PLT/lecture/attachments",
+    "PARA/2_Area/CS_Study/PLT/lecture",
+    "PARA/2_Area/CS_Study/PLT/01_How_to_Design_Programs.md",
     "sdlkfj.md",
     "PARA/2_Area/CS_Study/PLT",
     "PARA/2_Area/CS_Study/OS/6_Process_Synchronization.md",
-    "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-06-10 at 22.34.44.png",
-    "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-06-10 at 22.22.12.png",
     "PARA/2_Area/CS_Study/OS/Mutex_Semaphore.md",
     "PARA/2_Area/CS_Study/OS/finalterm/Homework3.md",
     "PARA/2_Area/CS_Study/OS/finalterm",
     "PARA/2_Area/CS_Study/OS/midterm/Commands.md",
     "PARA/2_Area/CS_Study/Algorithm/Dijkstras.md",
-    "PARA/2_Area/CS_Study/Algorithm/attachments/Pasted image 20250606191739.png",
     "PARA/2_Area/CS_Study/Algorithm/attachments",
     "PARA/2_Area/CS_Study/Algorithm",
     "PARA/2_Area/CS_Study/OS/Chapter_1-3_example_codes.md",
-    "PARA/2_Area/CS_Study/OS/attachments/Pasted image 20250603232829.png",
-    "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-05-29 at 02.25.30.png",
     "PARA/2_Area/CS_Study/OS/5_CPU_Scheduling.md",
-    "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-05-05 at 14.32.27.png",
-    "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-05-05 at 14.30.22.png",
-    "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-05-05 at 14.28.16.png",
-    "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-04-30 at 21.14.54.png",
-    "PARA/2_Area/CS_Study/OS/attachments/Screenshot 2025-04-30 at 20.52.07.png",
     "PARA/2_Area/CS_Study/OS/midterm/기억할만한_기법.md",
     "PARA/2_Area/CS_Study/OS/5_CPU_Scheduling",
     "PARA/2_Area/CS_Study/OS/Untitled",
@@ -216,17 +222,12 @@
     "PARA/2_Area/CS_Study/OS/02_OperatingSystemStructures.md",
     "PARA/2_Area/CS_Study/OS/midterm/HW2.md",
     "PARA/2_Area/CS_Study/OS/midterm/Untitled",
-    "PARA/2_Area/CS_Study/OS/midterm",
     "PARA/2_Area/CS_Study/OS/03_Processes.md",
     "PARA/4_Archive/React/Redux/Redux Toolkit.md",
     "[[.md",
     "PARA/1_Project/Gameboy/Memory.md",
     "PARA/1_Project/Gameboy/Assembly_Basics.md",
     "PARA/1_Project/Gameboy/binary_hexadecimal.md",
-    "PARA/1_Project/Gameboy/1_GameBoy개발환경_세팅과_Hello_World_출력.md",
-    "PARA/1_Project/Gameboy/Header.md",
-    "PARA/2_Area/CS_Study/OS/attachments",
-    "Study/NodeJs_BE/js_async_introduction.md",
     "Study/Java_Spring_Boot_3/JavaSpringBoot3_구조.canvas",
     "PARA/4_Archive/React/Redux/Redux map.canvas",
     "S5cene/3. Resource/SummerCamp/DB.canvas"
