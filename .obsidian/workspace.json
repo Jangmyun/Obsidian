@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PARA/2_Area/CS_Study/PLT/lecture/01_02_How_to_Design_Progams.md",
+                "file": "PARA/2_Area/Capstone_Design/Android/Kotlin.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01_02_How_to_Design_Progams"
+              "title": "Kotlin"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 205.5110321044922
+    "width": 205.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "84b7f99840ca271a",
@@ -142,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PARA/2_Area/CS_Study/PLT/lecture/01_02_How_to_Design_Progams.md",
+                "file": "PARA/2_Area/Capstone_Design/Android/Kotlin.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 01_02_How_to_Design_Progams"
+              "title": "Outline of Kotlin"
             }
           },
           {
@@ -180,9 +181,15 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "cb2786aee0f96fd8",
+  "active": "5c64a19d4632e56b",
   "lastOpenFiles": [
-    "PARA/2_Area/Untitled",
+    "PARA/2_Area/Capstone_Design/Android/Android_Native_dev.md",
+    "PARA/2_Area/Capstone_Design/Android/Kotlin.md",
+    "PARA/2_Area/Capstone_Design/Android/attachments/Screenshot 2025-06-24 at 17.48.28.png",
+    "PARA/2_Area/Capstone_Design/Android/attachments",
+    "PARA/2_Area/Capstone_Design/Android",
+    "PARA/2_Area/CS_Study/PLT/lecture/01_02_How_to_Design_Progams.md",
+    "PARA/2_Area/Capstone_Design",
     "PARA/2_Area/CS_Study/PLT/lecture/attachments/Screenshot 2025-06-24 at 17.09.51.png",
     "PARA/2_Area/CS_Study/PLT/lecture/attachments/Screenshot 2025-06-24 at 17.09.25.png",
     "PARA/2_Area/CS_Study/PLT/lecture/attachments/Screenshot 2025-06-24 at 17.04.57.png",
@@ -192,10 +199,8 @@
     "PARA/2_Area/CS_Study/PLT/lecture/attachments/Screenshot 2025-06-24 at 15.19.52.png",
     "PARA/2_Area/CS_Study/PLT/lecture/attachments/Screenshot 2025-06-24 at 15.19.13.png",
     "PARA/2_Area/CS_Study/PLT/lecture/attachments/Screenshot 2025-06-24 at 10.07.08.png",
-    "PARA/2_Area/CS_Study/PLT/lecture/attachments/Screenshot 2025-06-24 at 02.55.21.png",
     "PARA/2_Area/CS_Study/PLT/02_Introduction_to_Scala.md",
     "PARA/2_Area/CS_Study/PLT/Backus-Naur_Form.md",
-    "PARA/2_Area/CS_Study/PLT/lecture/01_02_How_to_Design_Progams.md",
     "PARA/2_Area/CS_Study/PLT/lecture/attachments",
     "PARA/2_Area/CS_Study/PLT/lecture",
     "PARA/2_Area/CS_Study/PLT/01_How_to_Design_Programs.md",
@@ -213,21 +218,17 @@
     "PARA/2_Area/CS_Study/OS/5_CPU_Scheduling.md",
     "PARA/2_Area/CS_Study/OS/midterm/기억할만한_기법.md",
     "PARA/2_Area/CS_Study/OS/5_CPU_Scheduling",
-    "PARA/2_Area/CS_Study/OS/Untitled",
     "Game.md",
     "PARA/4_Archive/c/Header의_중복방지.md",
-    "PARA/4_Archive/c",
     "PARA/1_Project/Gameboy/Register.md",
     "PARA/2_Area/CS_Study/OS/01_Introduction.md",
     "PARA/2_Area/CS_Study/OS/02_OperatingSystemStructures.md",
     "PARA/2_Area/CS_Study/OS/midterm/HW2.md",
-    "PARA/2_Area/CS_Study/OS/midterm/Untitled",
     "PARA/2_Area/CS_Study/OS/03_Processes.md",
     "PARA/4_Archive/React/Redux/Redux Toolkit.md",
     "[[.md",
     "PARA/1_Project/Gameboy/Memory.md",
     "PARA/1_Project/Gameboy/Assembly_Basics.md",
-    "PARA/1_Project/Gameboy/binary_hexadecimal.md",
     "Study/Java_Spring_Boot_3/JavaSpringBoot3_구조.canvas",
     "PARA/4_Archive/React/Redux/Redux map.canvas",
     "S5cene/3. Resource/SummerCamp/DB.canvas"
