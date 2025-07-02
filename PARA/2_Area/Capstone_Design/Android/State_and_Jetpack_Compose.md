@@ -198,4 +198,131 @@ State를 hoisting할 때, state가 어디로 가야하는지 파악하는 규칙
 `Bundle`에 추가되는 모든 데이터 타입은 자동으로 저장됨
 `Bundle`에 추가할 수 없는 것을 저장하고 싶을 때 사용하는 방법에는
 
+#### Parcelize
+```kotlin
+@Parcelize
+data class City(val name: String, val country: String) : Parcelable
+
+@Composable
+fun CityScreen() {
+    var selectedCity = rememberSaveable {
+        mutableStateOf(City("Madrid", "Spain"))
+    }
+}
+```
+
+#### MapSaver
+```kotlin
+data class City(val name: String, val country: String)
+
+val CitySaver = run {
+    val nameKey = "Name"
+    val countryKey = "Country"
+    mapSaver(
+        save = { mapOf(nameKey to it.name, countryKey to it.country) },
+        restore = { City(it[nameKey] as String, it[countryKey] as String) }
+    )
+}
+
+@Composable
+fun CityScreen() {
+    var selectedCity = rememberSaveable(stateSaver = CitySaver) {
+        mutableStateOf(City("Madrid", "Spain"))
+    }
+}
+```
+
+#### ListSaver
+
+```kotlin
+data class City(val name: String, val country: String)
+
+val CitySaver = listSaver<City, Any>(
+    save = { listOf(it.name, it.country) },
+    restore = { City(it[0] as String, it[1] as String) }
+)
+
+@Composable
+fun CityScreen() {
+    var selectedCity = rememberSaveable(stateSaver = CitySaver) {
+        mutableStateOf(City("Madrid", "Spain"))
+    }
+}
+```
+
+## State holders in Compose
+
+간단한 state hoisting은 composable 함수 내에서 관리할 수 있는데, 로직이 늘어나면 [**state holder**](https://developer.android.com/topic/architecture/ui-layer/stateholders)에 로직이나 state 책임을 위임하는 것이 좋다.
+
+## Retrigger remember calculations when keys change
+
+`remember` API는 `MutableState`와 함께 자주 사용됨
+
+```kotlin
+var name by remember { mutableStateOf("") }
+```
+
+`remember` 함수를 사용하면 `MutableState`값이 recomposition 간에 유지된다.
+
+`remember`는 일반적으로 `calculation` 람다 파라미터를 받는다. `remember`가 처음 실행될 때, `calculation`람다를 호출하고 그 결과를 저장하고, recomposition 때 마지막으로 저장된 값을 리턴한다.
+
+상태 캐싱 외에 `remember` 계산 cost가 많이드는 연산 결과를 컴포지션에 저장할 수 있다. 
+
+```kotlin
+val brush = remember {
+    ShaderBrush(
+        BitmapShader(
+            ImageBitmap.imageResource(res, avatarRes).asAndroidBitmap(),
+            Shader.TileMode.REPEAT,
+            Shader.TileMode.REPEAT
+        )
+    )
+}
+```
+
+`remember` API가 받는 `key` 혹은 `keys` 파라미터가 변경되면 다음 recompose 때 `remember`는 캐시를 무효화하고 `calculation` 람다 블록을 다시 실행한다.
+
+```kotlin
+@Composable
+private fun BackgroundBanner(
+    @DrawableRes avatarRes: Int,
+    modifier: Modifier = Modifier,
+    res: Resources = LocalContext.current.resources
+) {
+    val brush = remember(key1 = avatarRes) { // avatarRes가 변경되면 brush가 다시 계산됨
+        ShaderBrush(
+            BitmapShader(
+                ImageBitmap.imageResource(res, avatarRes).asAndroidBitmap(),
+                Shader.TileMode.REPEAT,
+                Shader.TileMode.REPEAT
+            )
+        )
+    }
+    Box(
+        modifier = modifier.background(brush)
+    ) {
+        /* ... */
+    }
+}
+```
+
+위 코드에서 `remember`는 `avatarRes`를 `key1` 파라미터로 받는데, `avatarRes`가 변경되면 리컴포즈되고, `Box`에 다시 적용된다.
+
+```kotlin
+@Composable
+private fun rememberMyAppState(
+    windowSizeClass: WindowSizeClass
+): MyAppState {
+    return remember(windowSizeClass) { // windowSizeClass가 변경되면 MyAppState 인스턴스가 다시 생성됨
+        MyAppState(windowSizeClass)
+    }
+}
+
+@Stable
+class MyAppState(
+    private val windowSizeClass: WindowSizeClass
+) { /* ... */ }
+```
+
+위 코드에서는 state가 state holder class인 `MyAppState`로 호이스팅된다.
 

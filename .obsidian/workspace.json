@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PARA/2_Area/Capstone_Design/Android/State_and_Jetpack_Compose.md",
+                "file": "PARA/2_Area/Capstone_Design/Android/Android_Native_dev.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "State_and_Jetpack_Compose"
+              "title": "Android_Native_dev"
             }
           }
         ]
@@ -182,9 +182,9 @@
   },
   "active": "ad8ef9d62265e698",
   "lastOpenFiles": [
-    "PARA/2_Area/Capstone_Design/Android/Thinking_in_Compose.md",
     "PARA/2_Area/Capstone_Design/Android/Kotlin.md",
     "PARA/2_Area/Capstone_Design/Android/State_and_Jetpack_Compose.md",
+    "PARA/2_Area/Capstone_Design/Android/Thinking_in_Compose.md",
     "README.md",
     "PARA/1_Project/MobileAppDev/DART.md",
     "PARA/4_Archive/React/React 에서 script태그로 자바스크립트 불러오기.md",
