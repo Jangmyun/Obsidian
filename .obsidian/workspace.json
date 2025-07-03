@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PARA/2_Area/Capstone_Design/Android/Android_Native_dev.md",
+                "file": "PARA/2_Area/Capstone_Design/Android/local_properties.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Android_Native_dev"
+              "title": "local_properties"
             }
           }
         ]
@@ -182,17 +182,18 @@
   },
   "active": "ad8ef9d62265e698",
   "lastOpenFiles": [
+    "PARA/2_Area/Capstone_Design/Android/_Loadmap.md",
+    "PARA/2_Area/Capstone_Design/Android/local_properties.md",
+    "PARA/2_Area/Capstone_Design/Android/01_create_your_first_app.md",
     "PARA/2_Area/Capstone_Design/Android/Kotlin.md",
     "PARA/2_Area/Capstone_Design/Android/State_and_Jetpack_Compose.md",
     "PARA/2_Area/Capstone_Design/Android/Thinking_in_Compose.md",
+    "PARA/2_Area/Capstone_Design/Android/Android_Native_dev.md",
     "README.md",
     "PARA/1_Project/MobileAppDev/DART.md",
     "PARA/4_Archive/React/React 에서 script태그로 자바스크립트 불러오기.md",
     "(.md",
-    "PARA/2_Area/Capstone_Design/Android/_Loadmap.md",
-    "PARA/2_Area/Capstone_Design/Android/01_create_your_first_app.md",
     "PARA/2_Area/Capstone_Design/Android/02_build_simple_app_with_text_composables.md",
-    "PARA/2_Area/Capstone_Design/Android/Android_Native_dev.md",
     "PARA/2_Area/Capstone_Design/Android/attachments/Screenshot 2025-06-24 at 17.48.28.png",
     "PARA/2_Area/Capstone_Design/Android/attachments",
     "PARA/2_Area/Capstone_Design/Android",
@@ -227,7 +228,6 @@
     "PARA/2_Area/CS_Study/OS/midterm/기억할만한_기법.md",
     "PARA/2_Area/CS_Study/OS/5_CPU_Scheduling",
     "Game.md",
-    "PARA/4_Archive/c/Header의_중복방지.md",
     "Study/Java_Spring_Boot_3/JavaSpringBoot3_구조.canvas",
     "PARA/4_Archive/React/Redux/Redux map.canvas",
     "S5cene/3. Resource/SummerCamp/DB.canvas"
