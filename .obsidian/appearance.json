@@ -1,5 +1,13 @@
 {
   "accentColor": "",
   "cssTheme": "Things",
-  "baseFontSize": 19
+  "baseFontSize": 19,
+  "showRibbon": true,
+  "showViewHeader": false,
+  "baseFontSizeAction": true,
+  "translucency": false,
+  "nativeMenus": true,
+  "monospaceFontFamily": "Monoplex KR Wide Nerd",
+  "textFontFamily": "Monoplex KR Wide Nerd",
+  "interfaceFontFamily": "Monoplex KR Wide Nerd"
 }
