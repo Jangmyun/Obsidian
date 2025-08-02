@@ -2,5 +2,7 @@
   "tabSize": 4,
   "attachmentFolderPath": "./attachments",
   "promptDelete": false,
-  "showInlineTitle": false
+  "showInlineTitle": false,
+  "showLineNumber": false,
+  "readableLineLength": false
 }
