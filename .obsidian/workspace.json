@@ -20,21 +20,8 @@
               "icon": "lucide-file",
               "title": "1_VideoStreaming_및_Display_기술"
             }
-          },
-          {
-            "id": "20bed6fd72b4e27e",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "PARA/2_Area/Capstone_Design/DigitalVideoConcepts/attachments/Screenshot 2025-08-02 at 14.15.02.png"
-              },
-              "icon": "lucide-image",
-              "title": "Screenshot 2025-08-02 at 14.15.02"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -193,11 +180,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "20bed6fd72b4e27e",
+  "active": "38d94dacb49567f8",
   "lastOpenFiles": [
-    "PARA/2_Area/Capstone_Design/DigitalVideoConcepts/attachments/Screenshot 2025-08-02 at 14.14.47.png",
-    "PARA/2_Area/Capstone_Design/DigitalVideoConcepts/attachments/Screenshot 2025-08-02 at 14.15.02.png",
     "PARA/2_Area/Capstone_Design/DigitalVideoConcepts/02_DigitalVideoCompressionTechniques.md",
+    "PARA/2_Area/Capstone_Design/VideoStreaming/1_VideoStreaming_및_Display_기술.md",
+    "PARA/2_Area/Capstone_Design/DigitalVideoConcepts/attachments/Screenshot 2025-08-02 at 14.15.02.png",
+    "PARA/2_Area/Capstone_Design/DigitalVideoConcepts/attachments/Screenshot 2025-08-02 at 14.14.47.png",
     "PARA/2_Area/Capstone_Design/DigitalVideoConcepts/attachments/Screenshot 2025-08-02 at 13.16.15.png",
     "PARA/2_Area/Capstone_Design/DigitalVideoConcepts/attachments/Screenshot 2025-08-02 at 00.04.54.png",
     "PARA/2_Area/Capstone_Design/DigitalVideoConcepts/attachments/Screenshot 2025-08-01 at 23.00.29.png",
@@ -207,7 +195,6 @@
     "PARA/2_Area/Capstone_Design/DigitalVideoConcepts/attachments/Screenshot 2025-08-01 at 20.47.55.png",
     "PARA/2_Area/Capstone_Design/DigitalVideoConcepts/attachments",
     "PARA/2_Area/Capstone_Design/DigitalVideoConcepts/01_INTRO.md",
-    "PARA/2_Area/Capstone_Design/VideoStreaming/1_VideoStreaming_및_Display_기술.md",
     "PARA/2_Area/Capstone_Design/DigitalVideoConcepts",
     "PARA/2_Area/Capstone_Design/VideoStreaming/Study_Guides.md",
     "PARA/1_Project/MiniYoutube/1.md",
