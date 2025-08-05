@@ -109,3 +109,6 @@
 - [PiWall GitHub](https://github.com/πwall/piwall) (혹은 아카이브: http://www.piwall.co.uk/)
 - [Raspberry Pi Display Stack](https://www.raspberrypi.com/documentation/computers/display.html)
 - YouTube 검색: "PiWall demo", "Video streaming explained", "OpenCV tutorial"
+
+[[DIGITAL_VIDEO]]
+
