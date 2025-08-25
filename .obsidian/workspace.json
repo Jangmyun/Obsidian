@@ -13,12 +13,36 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PARA/2_Area/CS_Study/NetworkProgramming/7_OSI_Layers.md",
+                "file": "PARA/2_Area/Capstone_Design/VideoStreaming/HTTP.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "7_OSI_Layers"
+              "title": "HTTP"
+            }
+          },
+          {
+            "id": "0d02c4817690fc00",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "PARA/2_Area/Capstone_Design/VideoStreaming/attachments/Pasted image 20250811164736.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20250811164736"
+            }
+          },
+          {
+            "id": "2fd8db73a24aac25",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "PARA/2_Area/Capstone_Design/VideoStreaming/attachments/Pasted image 20250806151126.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20250806151126"
             }
           }
         ]
@@ -171,6 +195,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -182,34 +207,35 @@
   },
   "active": "63c7617a836775f0",
   "lastOpenFiles": [
+    "PARA/2_Area/Capstone_Design/VideoStreaming/attachments/Pasted image 20250811164736.png",
+    "PARA/2_Area/Capstone_Design/VideoStreaming/HTTP.md",
+    "PARA/2_Area/Capstone_Design/VideoStreaming/Study_Guides.md",
+    "PARA/2_Area/Capstone_Design/VideoStreaming/TLS.md",
+    "PARA/2_Area/Capstone_Design/VideoStreaming/TOTAL_STUDY_GUIDE.md",
+    "PARA/2_Area/Capstone_Design/VideoStreaming/H_264_BITSTREAM.md",
+    "PARA/2_Area/Capstone_Design/VideoStreaming/attachments/Pasted image 20250806151126.png",
+    "PARA/2_Area/Capstone_Design/VideoStreaming/DIGITAL_VIDEO.md",
+    "PARA/2_Area/Capstone_Design/VideoStreaming/Wavelet.md",
+    "PARA/2_Area/attachments/Screenshot 2025-08-05 at 02.31.46.png",
+    "PARA/2_Area/Capstone_Design/VideoStreaming/DCT.md",
+    "PARA/2_Area/Capstone_Design/VideoStreaming/DigitalVideoConcepts/01_INTRO.md",
+    "PARA/2_Area/Capstone_Design/VideoStreaming/ContainerForamt.md",
+    "PARA/2_Area/Capstone_Design/VideoStreaming/1_VideoStreaming_및_Display_기술.md",
+    "PARA/2_Area/CS_Study/OS/01_Introduction.md",
+    "PARA/2_Area/CS_Study/NetworkProgramming/D1.md",
+    "PARA/2_Area/CS_Study/NetworkProgramming/7_OSI_Layers.md",
     "PARA/2_Area/CS_Study/NetworkProgramming/attachments/Pasted image 20250819003918.png",
     "PARA/2_Area/CS_Study/NetworkProgramming/attachments/Pasted image 20250819001154.png",
     "PARA/2_Area/CS_Study/NetworkProgramming/attachments/Pasted image 20250819000221.png",
-    "PARA/2_Area/CS_Study/NetworkProgramming/D1.md",
-    "PARA/2_Area/CS_Study/NetworkProgramming/7_OSI_Layers.md",
-    "PARA/2_Area/Capstone_Design/VideoStreaming/HTTP.md",
     "PARA/2_Area/Capstone_Design/Video/PiWall",
     "PARA/2_Area/Capstone_Design/Video",
-    "PARA/2_Area/Capstone_Design/VideoStreaming/TLS.md",
-    "PARA/2_Area/Capstone_Design/VideoStreaming/H_264_BITSTREAM.md",
-    "PARA/2_Area/Capstone_Design/VideoStreaming/DCT.md",
-    "PARA/2_Area/Capstone_Design/VideoStreaming/ContainerForamt.md",
     "PARA/2_Area/Capstone_Design/VideoStreaming/attachments/Screenshot 2025-08-06 at 22.30.12.png",
     "PARA/2_Area/Capstone_Design/VideoStreaming/attachments/Screenshot 2025-08-06 at 21.01.51.png",
     "PARA/2_Area/Capstone_Design/VideoStreaming/attachments/Screenshot 2025-08-06 at 13.26.15.png",
     "PARA/2_Area/Capstone_Design/VideoStreaming/attachments/Screenshot 2025-08-05 at 22.32.20.png",
     "PARA/2_Area/Capstone_Design/VideoStreaming/attachments/Pasted image 20250812203843.png",
-    "PARA/2_Area/Capstone_Design/VideoStreaming/attachments/Pasted image 20250812165806.png",
-    "PARA/2_Area/Capstone_Design/VideoStreaming/attachments/Pasted image 20250812164100.png",
     "PARA/2_Area/Capstone_Design/VideoStreaming/VideoStreamingProtocols.md",
-    "PARA/2_Area/Capstone_Design/VideoStreaming/attachments/Pasted image 20250812143044.png",
-    "PARA/2_Area/Capstone_Design/VideoStreaming/Study_Guides.md",
-    "PARA/2_Area/Capstone_Design/VideoStreaming/DIGITAL_VIDEO.md",
-    "PARA/2_Area/Capstone_Design/VideoStreaming/Wavelet.md",
-    "PARA/2_Area/Capstone_Design/VideoStreaming/TOTAL_STUDY_GUIDE.md",
     "PARA/2_Area/Capstone_Design/VideoStreaming/DigitalVideoConcepts/02_DigitalVideoCompressionTechniques.md",
-    "PARA/2_Area/Capstone_Design/VideoStreaming/1_VideoStreaming_및_Display_기술.md",
-    "PARA/2_Area/Capstone_Design/VideoStreaming/DigitalVideoConcepts/01_INTRO.md",
     "PARA/4_Archive/React/3. props.md",
     "PARA/4_Archive/React/2. Component 만들기.md",
     "PARA/4_Archive/React/1. 실습환경 구축.md",
@@ -219,7 +245,6 @@
     "PARA/4_Archive/Javascript/localStorage 사용법.md",
     "PARA/4_Archive/c/Header의_중복방지.md",
     "README.md",
-    "Untitled.md",
     "PARA/2_Area/attachments",
     "PARA/2_Area/Capstone_Design/attachments",
     "PARA/2_Area/Capstone_Design/VideoStreaming/DigitalVideoConcepts/attachments",
